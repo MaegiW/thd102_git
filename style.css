@@ -1,0 +1,11 @@
+body{
+    background-color: #9e7878;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+nav ul{
+    display: flex;
+}
