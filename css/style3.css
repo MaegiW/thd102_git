@@ -129,6 +129,8 @@ header{
     height: 400px;
     background-image: url(../img/NEWSBG.png);
     margin: 0 auto;
+   
+
 
 }
 
@@ -142,8 +144,7 @@ header{
 
 .breadcrumbs ul{
     display: flex ;
-    gap: 10px ;
-
+    column-gap: 10px;
     margin-bottom: 50px;
 } 
 
@@ -292,3 +293,88 @@ header{
 }
 
 /* <!-- 頁數 --> */
+
+.container, .button , .links, .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #1F1928;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+.container{
+    padding: 10px;
+    column-gap: 15px;
+
+}
+
+.button{
+    border: none;
+}
+
+.link{
+    width: 45px;
+    color: #D9D9D9;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+/* <!-- 最下面footer --> */   
+
+footer{
+    background-color: #2B252F;
+    width: 1280px;
+    height: 250px;
+    color: #D9D9D9;
+    padding-top: 30px;
+    margin-top: 30px;
+    /* position: absolute; */
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    font-size: 16px;
+    max-width: 500px;
+    line-height: 1.5rem;
+    margin: 10px auto;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.socials li{
+    margin: 0 10px;
+}
+
+.footer-bottom{
+    width: 1280px;
+    justify-content: center;
+
+}
+
+.footer-bottom p{
+    font-size: 12px;
+    
+}
