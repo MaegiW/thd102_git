@@ -167,5 +167,128 @@ header{
 
 }
 
-    
 
+/* <!-- 中間區塊 --> */
+ .news{
+    width: 1280px;
+    height: auto;
+    margin-top: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+   
+ }
+
+ .news1{
+    width: 600px;
+    height: 208px;
+    border: 1px solid #FFA629;
+    margin: 50px auto;
+    background-color:#353232 ;
+ }
+
+ .photo{
+    width: 213px;
+    height: 175px;
+    float:left;
+ }
+
+ .photo img{
+    display: block;
+    width:100%;
+    padding: 20px 33px;
+    
+ }
+
+.text{
+    float: right; 
+    width: 213px;
+    height: 180px;
+    padding: 25px 85px;
+    display: block;
+ }
+
+.text h1{
+    font-size: 24px;
+    line-height: 1.6;
+     color: #D9D9D9;
+    display: block;
+
+}
+
+.text p{
+    font-size:16px ;
+    justify-content: center;
+    line-height: 1.5;
+    color: #D9D9D9;
+    display: block;
+
+}
+
+.text h6{
+    color: #D9D9D9;
+    font-size: 16px;
+    line-height: 2;
+    display: block;
+
+
+}
+
+.text a {
+    border: 1px solid #1F1928;
+    background-color: #FFA629;
+    float: right;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius:5px;
+    font-size: 12px;
+    position: absolute;
+    margin: -13px 176px;
+    
+}
+
+.news2{
+    width: 600px;
+    height: 208px;
+    border: 1px solid #FFA629;
+    margin: 50px auto;
+    background-color:#353232 ;
+}
+
+
+
+.news3{
+    width: 600px;
+    height: 208px;
+    border: 1px solid #FFA629;
+    margin: 50px auto;
+    background-color:#353232 ;
+}
+
+
+.news4{
+    width: 600px;
+    height: 208px;
+    border: 1px solid #FFA629;
+    margin: 50px auto;
+    background-color:#353232 ;
+}
+
+.news5{
+    width: 600px;
+    height: 208px;
+    border: 1px solid #FFA629;
+    margin: 50px auto;
+    background-color:#353232 ;
+}
+
+.news6{
+    width: 600px;
+    height: 208px;
+    border: 1px solid #FFA629;
+    margin: 50px auto;
+    background-color:#353232 ;
+}
+
+/* <!-- 頁數 --> */
