@@ -277,6 +277,18 @@ header{
     }
 }
 
+.game :nth-child(even){
+    background-color: #5A4016;
+    border: none;
+    
+} 
+
+
+/* div.game :nth-child(odd){
+    background-color: #353232;
+   
+}  */
+
 
 /* <!-- 頁數 --> */
 
