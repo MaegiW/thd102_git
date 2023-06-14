@@ -277,11 +277,13 @@ header{
     }
 }
 
-.game :nth-child(even){
+.game-box:nth-child(2n){
     background-color: #5A4016;
     border: none;
     
 } 
+
+
 
 
 /* div.game :nth-child(odd){
