@@ -140,6 +140,7 @@ header{
 .contact-box{
     height: 650px;
     display:flex ;
+    justify-content: space-between;
     margin-top: 50px ;
     margin-left: 85px;
     
