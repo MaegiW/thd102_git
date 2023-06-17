@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reservation.css">
+    <title>reservation</title>
+
+</head>
+<body>
+      <!-- 最上header -->
+ <header>
+    <div class="header_left">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./about_us.html">關於NIGERU</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                    <li class="showList">
+                        <a href="./products.html">密室主題 <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                            <ul class="dropdown">
+                                <li><a href="./game.html">倖存者</a></li>
+                                <li><a href="./game.html">娃娃</a></li>
+                                <li><a href="./game.html">嚇水道</a></li>
+                                <li><a href="./game.html">傘</a></li>
+                                <li><a href="./game.html">三号室</a></li>
+                                <li><a href="./game.html">緯育高校女子</a></li>
+                            </ul>
+                    </li>
+                <li><a href="./contact_us.html">聯絡我們</a></li>     
+            </ul>
+        </nav>
+    </div>
+    <div class="header_right">
+        <div class="button">
+            <a href="#">線上預約</a>
+        </div>
+        <div class="login">
+            <a href="#"><img src="./img/login.png" alt=""></a>
+        </div>
+    </div>    
+    </header>
+
+    <!-- 標題 -->
+    <div class="wrapper">
+        <div class="top-wrapper">
+            <h1>線上預約</h1>
+        </div>
+        <div class="main-wrapper">
+            <!-- 左邊 -->
+            <div class="left-wrapper">
+                <div class="game">
+                    <div class=" container">
+                        <select>
+                            <option value="選擇密室主題">選擇密室主題</option>
+                            <option value="緯育高校女子">緯育高校女子</option>
+                            <option value="倖存者">倖存者</option>
+                            <option value="娃娃">娃娃</option>
+                            <option value="嚇水道">嚇水道</option>
+                            <option value="傘">傘</option>
+                            <option value="三号室">三号室</option>
+                        </select>
+                        
+                
+                        <img src="./img/緯育女子高校1.png" alt="">
+                        
+                    </div>
+                </div>
+
+                <div class="notice">
+                    <h1>【  注意事項  】</h1>
+                    <div class="text-list">
+                        <ul style="list-style-type:disc;">
+                            <li>預約須滿足遊戲最低人數。</li>
+                            <li>變更或取消預訂日期，請於預約日前三日來電通知。</li>
+                            <li>預約時預收1000元訂金，並且於遊戲當日依實際狀況收取差額。</li>
+                            <li>遊戲開場前24小時以上取消預約，訂金可返還50％。</li>
+                            <li>遊戲開場前24小時內取消預約，訂金無法返還。</li>
+                            <li>遇天災或不可抗力因素取消或變更場次，以網站公告為準。</li>
+                            <li>提前10分鐘到場集合報到，進行事前說明。</li>
+                            <li>遊戲期間請勿飲食、攝影及錄音。</li>
+                            <li>如有特殊需求（輪椅、嬰兒車、孕婦、寵物等），請先來電詢問。</li>
+                            <li>6歲以上需收費入場，未滿12歲孩童，全程需有1名以上成年人陪同參加，全館遊戲滿18歲可玩。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 右邊 -->
+            <div class="right-wrapper">
+                 
+                <label>
+                    <div class="time">
+                        <p>選擇日期:</p>
+                        <input type="date" class="date" name="date">
+                    </div>
+
+                    <div class="time">
+                     <p>選擇時段:</p>
+                        <input type="radio" class="10:00 - 11:00" name="10:00 - 11:00" checked />10:00 - 11:00</label>
+                        <input type="radio" class="11:45 - 12:45" name="11:45 - 12:45" checked />11:45 - 12:45</label>
+                        <input type="radio" class="13:30 - 14:30" name="13:30 - 14:30" checked />13:30 - 14:30</label>
+                        <input type="radio" class="15:15 - 16:15" name="15:15 - 16:15" checked />15:15 - 16:15</label>
+                        <input type="radio" class="17:00 - 18:00" name="17:00 - 18:00" checked />17:00 - 18:00</label>
+                        <input type="radio" class="18:45 - 19:45" name="18:45 - 19:45" checked />18:45 - 19:45</label>
+                        <input type="radio" class="20:30 - 21:30" name="20:30 - 21:30" checked />20:30 - 21:30</label>
+                    </div>
+
+
+                    <div class="form">
+                        <input type="真實姓名" placeholder="真實姓名">
+                        <input type="手機" placeholder="手機">
+                        <input type="email" placeholder="email">
+                        <p>*將寄送預約資訊至您的信箱</p>
+                            <select>
+                                <option value="人數">人數</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="8~10">8~10</option>
+                            </select>
+                        <textarea rows="8"placeholder="備註"></textarea>
+                    </div>
+                    <button type="submit">取消</button>
+                    <button type="submit">確定預約</button>
+                </label>
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
