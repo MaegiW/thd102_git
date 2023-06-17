@@ -57,7 +57,7 @@
                     <div class=" container">
                         <select>
                             <option value="選擇密室主題">選擇密室主題</option>
-                            <option value="緯育高校女子">緯育高校女子</option>
+                            <option value="緯育高校女子" selected>緯育高校女子</option>
                             <option value="倖存者">倖存者</option>
                             <option value="娃娃">娃娃</option>
                             <option value="嚇水道">嚇水道</option>
@@ -66,7 +66,7 @@
                         </select>
                         
                 
-                        <img src="./img/緯育女子高校1.png" alt="">
+                        <img src="./img/b5.png" alt="">
                         
                     </div>
                 </div>
@@ -93,20 +93,25 @@
             <div class="right-wrapper">
                  
                 <label>
-                    <div class="time">
+                    <div class="datetime">
                         <p>選擇日期:</p>
                         <input type="date" class="date" name="date">
                     </div>
 
                     <div class="time">
                      <p>選擇時段:</p>
-                        <input type="radio" class="10:00 - 11:00" name="10:00 - 11:00" checked />10:00 - 11:00</label>
-                        <input type="radio" class="11:45 - 12:45" name="11:45 - 12:45" checked />11:45 - 12:45</label>
-                        <input type="radio" class="13:30 - 14:30" name="13:30 - 14:30" checked />13:30 - 14:30</label>
-                        <input type="radio" class="15:15 - 16:15" name="15:15 - 16:15" checked />15:15 - 16:15</label>
-                        <input type="radio" class="17:00 - 18:00" name="17:00 - 18:00" checked />17:00 - 18:00</label>
-                        <input type="radio" class="18:45 - 19:45" name="18:45 - 19:45" checked />18:45 - 19:45</label>
-                        <input type="radio" class="20:30 - 21:30" name="20:30 - 21:30" checked />20:30 - 21:30</label>
+                        <input type="radio" class="hour" name="10:00 - 11:00" checked />10:00 - 11:00</label>
+                        <input type="radio" class="hour" name="11:45 - 12:45" checked />11:45 - 12:45</label>
+                        <input type="radio" class="hour" name="13:30 - 14:30" checked />13:30 - 14:30</label>
+                        <input type="radio" class="hour" name="15:15 - 16:15" checked />15:15 - 16:15</label>
+                        <input type="radio" class="hour" name="17:00 - 18:00" checked />17:00 - 18:00</label>
+                        <input type="radio" class="hour" name="18:45 - 19:45" checked />18:45 - 19:45</label>
+                        <input type="radio" class="hour" name="20:30 - 21:30" checked />20:30 - 21:30</label>
+                        <button>
+                            <div class="">
+
+                            </div>
+                        </button>
                     </div>
 
 
@@ -142,5 +147,28 @@
 
     </div>
     
+    <script>
+        let img = document.querySelector(img);
+        let selectImg = document.querySelector(select);
+        let game = ["./img/b5.png", "./img/b1.png", "./img/b2.png","./img/b3.png","./img/b4.png","./img/b6.png"];
+        
+        selectImg.addEventListener("chang", () => {
+         let value = selectImg.option[selectImg.selectedIndex].value
+         switch (value) {
+            case "緯育高校女子":
+            img.setAttribute("src", game[5])
+            break;
+                 
+            case "倖存者":
+            img.setAttribute("src", game[1])
+            break;
+         
+            default:
+                break;
+         }
+        })
+        
+    </script>
+
 </body>
 </html>
