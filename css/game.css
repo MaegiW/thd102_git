@@ -159,7 +159,7 @@ body{
     border: 1px solid #FFA629;
     justify-content: center;
     background-color: #353232;
-    border-radius:5px;
+    border-radius: 5px;
 
 
 }
@@ -176,6 +176,7 @@ body{
     flex-direction: column;
     float: right;
     position: relative;
+
 }
 
 .label img{
@@ -194,5 +195,57 @@ body{
 }
 
 .mid-container{
+    flex-basis: 50%;
+   
+
+}
+
+.mid-container ul{
+    display: flex;
     
 }
+
+.mid-container li{
+    border: 1px solid #FFA629;
+    margin: 20px;
+    width: 180px;
+    height: 166px;
+    border-radius: 5px;
+    background-color: #353232;
+    
+}
+
+.mid-container i{
+    font-size: 60px;
+    padding-top: 20px; 
+    padding-left: 60px;
+    
+
+
+}
+
+li h1{
+    font-size:20px;
+    color: #D9D9D9;
+    display: flex;
+    justify-content: center; 
+    padding-top: 10px;
+   
+}
+
+
+li p{
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    color: #D9D9D9;
+    margin: 0;
+    padding-top:10px ;
+}
+
+li img{
+    padding-left: 30px;
+    padding-top: 20px;
+  
+}
+
