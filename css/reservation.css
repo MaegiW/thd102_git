@@ -243,15 +243,22 @@ header{
     margin-bottom: 20px;
 }
 
-input{
+.radio1{
     border: 1px solid #FFA629;
+    display: block;
+    width: 115px;
+    height: 60px;
+    background-color: #353232;
+    text-align: center;
    
 
 
 }
 
 .hour{
-    border: 1px solid #FFA629;
+    display: flex;
+    margin: 9px auto;
+
 
 }
 
