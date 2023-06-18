@@ -50,20 +50,33 @@
     color: #D9D9D9 ;
 }
 
-.input-group{
-    /* top: 180px;
-    left: 40%; */
-    /* position: absolute;  */
-    width: 280px;
-    margin:  auto;
+.input-group{ 
+    margin-left:50px ;
+    margin: 30px;
+ 
+}
+
+.text-box{
     display: flex;
-   
-   
+    margin: 20px;
+    margin-left: 70px;
+    background-color: #353232;
+    border: 1px solid #FFA629;
+    padding: 10px;
+    color: #D9D9D9;
+    border-radius: 5px;
    
 }
 label{
     color:#D9D9D9;
     display: flex;
-    margin: 20px;
+   
 }
 
+.check-box{
+margin-left: 10px ;
+}
+
+.submit-btn{
+    display: flex;
+}
