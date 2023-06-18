@@ -243,23 +243,33 @@ header{
     margin-bottom: 20px;
 }
 
+.time{
+    display: flex;
+    flex-wrap: wrap;
+    height: 430px;
+    width: 700px;
+    justify-content: space-between;
+    
+}
+
 .radio1{
     border: 1px solid #FFA629;
-    display: block;
+    /* display: block; */
     width: 115px;
     height: 60px;
     background-color: #353232;
     text-align: center;
-   
-
+    border-radius: 5px;
+    color: #D9D9D9;
+    margin:0  10px;
+    
 
 }
 
 .hour{
     display: flex;
     margin: 9px auto;
-
-
+   
 }
 
 

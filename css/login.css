@@ -51,11 +51,12 @@
 }
 
 .input-group{
-    top: 180px;
-    left: 40%;
-    position: absolute; 
+    /* top: 180px;
+    left: 40%; */
+    /* position: absolute;  */
     width: 280px;
     margin:  auto;
+    display: flex;
    
    
    
