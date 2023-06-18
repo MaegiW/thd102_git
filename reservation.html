@@ -55,7 +55,7 @@
             <div class="left-wrapper">
                 <div class="game">
                     <div class=" container">
-                        <select>
+                        <select id="subjectType">
                             <option value="選擇密室主題">選擇密室主題</option>
                             <option value="緯育高校女子" selected>緯育高校女子</option>
                             <option value="倖存者">倖存者</option>
@@ -66,7 +66,7 @@
                         </select>
                         
                 
-                        <img src="./img/b5.png" alt="">
+                        <img src="./img/b5.png" alt="" id="subjectImg">
                         
                     </div>
                 </div>
@@ -183,19 +183,36 @@
     </footer>
     
     <script>
-        let img = document.querySelector(img);
-        let selectImg = document.querySelector(select);
+        let img = document.getElementById("subjectImg");
+        let selectImg = document.getElementById("subjectType");
         let game = ["./img/b5.png", "./img/b1.png", "./img/b2.png","./img/b3.png","./img/b4.png","./img/b6.png"];
         
-        selectImg.addEventListener("chang", () => {
-         let value = selectImg.option[selectImg.selectedIndex].value
-         switch (value) {
+        selectImg.addEventListener("change", function(){
+            // console.log("dfg");
+         let selectedValue = selectImg.options[selectImg.selectedIndex].value
+         switch (selectedValue) {
             case "緯育高校女子":
-            img.setAttribute("src", game[5])
+            img.setAttribute("src", game[0])
             break;
                  
             case "倖存者":
             img.setAttribute("src", game[1])
+            break;
+
+            case "娃娃":
+            img.setAttribute("src", game[2])
+            break;
+
+            case "嚇水道":
+            img.setAttribute("src", game[3])
+            break;
+
+            case "傘":
+            img.setAttribute("src", game[4])
+            break;
+
+            case "三号室":
+            img.setAttribute("src", game[5])
             break;
          
             default:
