@@ -203,6 +203,8 @@ textarea{
     border-radius: 5px;
     box-sizing: border-box;
     outline: none;
+    color: #D9D9D9;
+    font-size: 16px;
 }
 
 button{
@@ -259,8 +261,8 @@ button{
 .area1 p{
     color: #D9D9D9;
     text-align: justify;
-   padding: 15px;
-   line-height: 1.2;
+    padding: 15px;
+    line-height: 1.2;
 
 }
 
