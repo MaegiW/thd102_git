@@ -279,7 +279,7 @@ header{
 
 .game-box:nth-child(2n){
     background-color: #5A4016;
-    border: none;
+    border: 1px solid #5A4016;
     
 } 
 
