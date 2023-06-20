@@ -326,18 +326,30 @@ textarea{
     margin-left: 88px;
 
 }
-button{
+
+
+.cancel{
+    background-color: #353232;
+    border: 1px solid #FFA629;
+    font-size: 16px;
+   
+    z-index: 2;
+
+}
+
+
+/* button{
     justify-content: center;
     margin-top: 20px;
     background-color: #FFA629;
     width: 100px;
     height: 30px;
     margin-left: 110px;
-    /* border: 1px solid #FFA629; */
+    border: 1px solid #FFA629;
     border-radius: 5px;
-   
 
-}   
+}    */
+
 
 
 /* <!-- 最下面footer --> */   
