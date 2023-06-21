@@ -318,8 +318,8 @@ header{
 /* <!-- 最下面footer --> */   
 
 footer{
-    background-color: #2B252F;
-    width: 1280px;
+    background-color: #1F1928;
+    /* width: 1280px; */
     height: 250px;
     color: #D9D9D9;
     padding-top: 30px;
@@ -359,7 +359,7 @@ footer{
 }
 
 .footer-bottom{
-    width: 1280px;
+    /* width: 1280px; */
     justify-content: center;
 
 }

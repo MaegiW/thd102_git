@@ -329,16 +329,15 @@ textarea{
 
 
 .cancel{
-    background-color: #353232;
-    border: 1px solid #FFA629;
-    font-size: 16px;
-   
-    z-index: 2;
+    background-color: #2B252F;
+    color: #D9D9D9;
 
 }
 
 
-/* button{
+button{
+    /* appearance: none; */
+
     justify-content: center;
     margin-top: 20px;
     background-color: #FFA629;
@@ -348,7 +347,12 @@ textarea{
     border: 1px solid #FFA629;
     border-radius: 5px;
 
-}    */
+}   
+button:active{
+    background-color: #1F1928;
+    color:#D9D9D9;
+
+}
 
 
 
