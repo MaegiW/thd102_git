@@ -100,23 +100,26 @@ header{
 }
 
 .button{
-    border: 1px solid #FFA629;
-    display: block;
+    display: inline-block;
     margin-right:20px ;
-    padding: 8px;
     border-radius:5px;
+   
+
 }
-
-
 .button a{
     text-decoration: none;
     font-size: 18px;
     color: #D9D9D9;
+    width: 100%;
+    border:1px solid #FFA629;
+    padding: 8px;
+    border-radius:5px;
+
 }
 .button a:hover{
     color: #FFA629;
+    
 }
-
 
 .login{
     padding-right: 60px;
