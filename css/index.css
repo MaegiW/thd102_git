@@ -127,7 +127,7 @@ header{
 
 .login{
     padding-right: 60px;
-    padding-top: 8px;
+    
 }
 
 /* 主畫面TOP */
@@ -405,9 +405,8 @@ header{
     background: #000;
     border-radius: 50%;
     cursor: pointer;
-   
-    position: absolute;
 
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
