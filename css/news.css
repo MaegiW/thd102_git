@@ -194,7 +194,6 @@ position: relative;
     /* margin-top: 80px auto; */
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
-    /* flex-wrap: wrap; */
     /* position: relative; */
     grid-gap: 30px;
    
