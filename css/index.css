@@ -17,7 +17,7 @@ body{
 /* <!-- 最上header --> */
 
 header{
-    height: 90px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -273,14 +273,19 @@ header{
     text-decoration: none;
     margin: 0  auto;
     margin-bottom: 20px;
-    color: #1F1928;
+    color: #000;
     
-
 }
 
-.news li:hover{
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+.news a:hover, 
+
+a:visited, a:link, a:active{
+    color: #000;
+    text-decoration: none;
 }
+
+
+
 
 /* <!-- 遊戲流程 --> */
 
@@ -462,7 +467,7 @@ footer{
 }
 
 .footer-bottom{
-    /* width: 1280px; */
+   
     justify-content: center;
 
 }
