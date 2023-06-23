@@ -28,7 +28,7 @@ header{
     position:sticky;
     top:0;
     z-index: 2;
-    width: 1223px;
+    /* width: 1223px; */
     margin: 0 auto;
 
     
@@ -135,7 +135,7 @@ header{
 /* <!-- 上方NEWS --> */
 
 .banner-area{
-    width: 1260px; 
+    width: 1250px; 
     height: 400px;
     background-image: url(../img/NEWSBG.png);
     margin: 0 auto;
