@@ -26,6 +26,8 @@ header{
     position:sticky;
     top:0;
     z-index: 1;
+    width: 1223px;
+    margin: 0 auto;
     
 }
 .header_left{
@@ -196,6 +198,7 @@ input{
     font-size: 16px;
     outline: none;
     color: #D9D9D9;
+    
     height: 25px;
 
     
