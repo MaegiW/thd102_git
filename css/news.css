@@ -311,10 +311,10 @@ position: relative;
 /* <!-- 最下面footer --> */   
 
 footer{
-    background-color: #1F1928;
+    /* background-color: #1F1928; */
     color: #D9D9D9;
     padding-top: 30px;
-    margin-top: 30px;
+    margin-top: 60px;
     /* position: absolute; */
 
 }
