@@ -234,7 +234,7 @@ body{
 
 }
 
-li h1{
+li h3{
     font-size:20px;
     color: #D9D9D9;
     display: flex;
@@ -360,10 +360,73 @@ input[type="radio"] {
   padding-top: 30px;
 }
 
-.booking-card img{
+.pricearea{
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 320px;
+    height: 180px;
+    margin: 30px 90px;
+}
+
+.price1{
+    float: left;
+    width: 50%;
+ 
+}
+
+h2{
+    color: #D9D9D9;
+    margin-bottom: 20px;
+}
+p{
+    color: #D9D9D9;
+    margin-bottom: 30px;
+}
+
+
+.price2{
+    width: 50%;
+    float: right;
+    
+}
+
+.custom-hr {
+    width: 75%; /* 設定寬度，可以使用百分比或像素值 */
+    margin-left: -2%; /* 設定水平偏移量，調整水平位置 */
+    margin-bottom: 25px;
+}
+  
+
+.price3{
+    width: 50%;
+    float: left;
+}
+
+.price4{
+    float: right;
+    width: 50%;
+   
+ 
+}
+
+
+.price3 i{
+    float: left;
+}
+
+.price4 i{
+    float: left;
+}
+
+
+
+
+
+
+/* .booking-card img{
     display: block; 
     margin: 30px auto;
-}
+} */
 
 .booking-card a{
     text-decoration: none;
