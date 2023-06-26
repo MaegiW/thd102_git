@@ -190,58 +190,48 @@ header{
 /* <!-- 選擇欄 --> */
 
 .list-area{
-    position: relative;
+    /* position: relative; */
     display: flex;
    
 }
 
 .list{
-    justify-self: center;
-    margin: 0 auto;
-    
-    
-
+    justify-content: space-between;
+    margin: 0 auto; 
 }
 
-.list ul{
-    display: flex;
-    column-gap: 40px;
-    margin-left:-40px;
-    position: absolute;
-    
-}
 
-.list a{
-    background-color: #353232;
+
+.btn{
     display: block;
     border: 1px solid #FFA629;
     font-size: 16px;
     color: #FFA629;
     padding: 10px 20px ; 
     border-radius:10px;
-    text-decoration: none;
+    text-decoration: none;  
     
 }
+
+
 /* <!-- 搜尋欄 --> */
 .box{
     height: 20px;
-    display: flex;
+    float: right;
     cursor: pointer;
     padding: 10px 20px;
     border: 1px solid #FFA629;
     background-color: #353232;
     border-radius: 10px;
     align-items: center;
-    margin-right: 130px;
+    margin-left: 130px;
 
 }
-
 
 
 .box input{
     background-color: #353232;
     background: transparent;
-    width: 170px;
     outline: none;
     border: none;
     font-weight: 100;

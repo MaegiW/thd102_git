@@ -1,17 +1,12 @@
-@import url("reset.css");
+@import url(./reset.css);
 
 body{
-   /* max-width: 1280px; */
-    /* height: 100vh; */
+  
     margin: 0 auto;
     background-color: #1F1928;
     font-family:Arial, Helvetica, sans-serif;
    
 }
-
-/* *{
-    /* outline: solid 1px black; */
-    
 
 
 /* <!-- 最上header --> */
@@ -27,11 +22,9 @@ header{
     opacity: .8;
     position:sticky;
     top:0;
-    z-index: 2;
+    z-index: 1;
     width: 1223px;
     margin: 0 auto;
-
-    
     
 }
 .header_left{
@@ -125,275 +118,13 @@ header{
 }
 
 
-
-
 .login{
     padding-right: 60px;
     
 }
 
-/* login */
-
-.overlay{
-    height: 100%;
-    width: 100%;
-    background-color: #0C0B0B;
-
-}
-
-.form-box{
-    width: 380px;
-    height: 380px;
-    position: relative;
-    margin: 6% auto;
-    background-color: #353232 ;
-    padding: 5px;
-}
-
-.close-btn{
-    float: right;
-    font-size: 25px;
-    margin-right: 10px;
-    color: #D9D9D9;
-}
 
 
-.button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    background-color: #211e1a;
-    border-radius: 10px;
-}
-
-.button-box .button{
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline:none;
-    position: relative;
-    color: #D9D9D9 ;
-    border-radius: 10px;
-   
-
-}
-
-#btn{
-    top:0;
-    left:0;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    background-color: #FFA629;
-    transition: .5s;
-    border-radius: 10px;
-    color: #D9D9D9 ;
-}
-
-.input-group{
-    width: 176px;
-    height: 50px;
-    margin: 0 auto;
-
-}
-
-.details{
-    color: #D9D9D9;
-    font-size: 12px;
-    display: block;
-    margin-bottom: 10px;
-    margin-left: -10px;
-    
-}
-   
-.input-box input{
-    border: 1px solid #FFA629;
-    background-color:#353232 ;
-    width: 200px;
-    height: 25px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    margin-left: -14px;
-
-}
-    
-.box .check-box{
-    font-size: 12px;
-}
-
-.box span{
-    color: #D9D9D9;
-    font-size: 12px;
-    
-}
-
-.button-login{
-    display: block;
-    margin:  10px 70px;
-  
-}
-.submit-btn{
-    color: #0C0B0B;
-    background-color: #FFA629;
-    width: 80px;
-    height: 27px;
-    border-radius: 5px;
-    display: block;
-    margin-left: -20px;
-    border: 1px solid #FFA629;
-   
-}
-
-.submit-btn:active{
-    background-color: #1F1928;
-    color:#D9D9D9;
-
-
-}
-
-.input-group a{
-    color: #D9D9D9;
-    font-size: 12px;
-    margin-left: 55px;
-}
-
-/* register */
-.register-box{
-    height: 100%;
-    width: 100%;
-    background-color: #0C0B0B;
-
-}
-
-.form-box{
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    background-color: #353232 ;
-    padding: 5px;
-}
-.button-box{
-    width: 220px;
-    margin: 35px auto;
-    position: relative;
-    background-color: #211e1a;
-    border-radius: 10px;
-}
-
-
-.button{
-    padding: 10px 34px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline:none;
-    position: relative;
-    color:#D9D9D9;
-   font-size: 18px;
-    border-radius: 10px;
-
-}
-#btn{
-    top:0;
-    left:0;
-    position: absolute;
-    width: 55%;
-    height: 100%;
-    background-color: #FFA629;
-    transition: .5s;
-    border-radius: 10px;
-    color: #D9D9D9 ;
-    margin-left: 100px;  
-}
-
-.input-group{
-    margin: 10PX 106PX;
-  
-}
-
-   
-.input-box span{
-    color:#D9D9D9;
-    font-size: 12px;
-    margin-left: -12px;
-  
-
-}
-
-.input-group input{
-    margin-top: 5px;
-    border: 1px solid #FFA629;
-    background-color: #353232;
-    border-radius: 5px;
-    width: 207px;   
-    height: 30px;
-    margin-left:-14px;
-}
-
-.input-firstname{
-    color: #D9D9D9;
-    font-size: 12px;
-    margin-top: 5px;
-   
-}
-.input-firstname span{
-    margin-left: -13px;
-}
-
-
-.input-firstname input{
-    width: 92px;
-    display: flex;
-    margin-right: 30px;
-
-}
-
-.input-lastname{
-    color: #D9D9D9;
-    font-size: 12px;
-    margin-top: 5px;
-}
-
-.input-lastname span{
-    margin-left: -13px;
-}
-
-
-.input-lastname input{
-    width: 92px;
-    display: flex;
-}
-
-.name-area{
-    display: flex;
-    
-}
-
-
-.button-login{
-    display: block;
-    margin:  10px 70px;
-  
-}
-.submit-btn{
-    color: #0C0B0B;
-    background-color: #FFA629;
-    width: 80px;
-    height: 27px;
-    border-radius: 5px;
-    display: block;
-    margin-left: -20px;
- 
-   
-}
-
-.input-group a{
-    color: #D9D9D9;
-    font-size: 12px;
-    margin-left: 55px;
-}
 
 /* 主畫面TOP */
 
@@ -605,10 +336,10 @@ header{
 
 .text p{
     color:#D9D9D9;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
     line-height: 1.6;
-    padding: 10px;
+    padding: 10px 35px;
     justify-content: center;
 
 }
