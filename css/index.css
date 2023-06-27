@@ -120,8 +120,283 @@ header{
 
 .login{
     padding-right: 60px;
+   
+}
+.login button{
+    background-color: #1F1928;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* login */
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #38343442;
+
+}
+
+.form-box{
+    width: 380px;
+    height: 380px;
+    position: relative;
+    margin: 6% auto;
+    background-color: #353232 ;
+    padding: 5px;
+}
+
+.close-btn{
+    float: right;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #D9D9D9;
+}
+
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    background-color: #211e1a;
+    border-radius: 10px;
+}
+.loginbutton{
+    padding: 10px 34px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline:none;
+    position: relative;
+    color:#D9D9D9;
+    font-size: 18px;
+    border-radius: 10px;
+
+}
+
+#btn{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #FFA629;
+    transition: .5s;
+    border-radius: 10px;
+    color: #D9D9D9 ;
+}
+
+.login-group{
+    width: 176px;
+    height: 50px;
+    margin: 0 auto;
+
+}
+
+.details{
+    color: #D9D9D9;
+    font-size: 12px;
+    margin-left: -10px;
     
 }
+   
+.input-box input{
+    border: 1px solid #FFA629;
+    background-color:#353232 ;
+    width: 200px;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: -14px;
+
+}
+    
+.checkbox{
+   float: left;
+   display: block;
+}
+
+.box span{
+    color: #D9D9D9;
+    font-size: 12px;
+    
+}
+
+.button-login{
+    display: block;
+    margin:  10px 70px;
+  
+}
+.submit-btn{
+    color: #0C0B0B;
+    background-color: #FFA629;
+    width: 80px;
+    height: 27px;
+    border-radius: 5px;
+    display: block;
+    margin-left: -20px;
+    border: 1px solid #FFA629;
+   
+}
+
+.submit-btn:active{
+    background-color: #1F1928;
+    color:#D9D9D9;
+
+
+}
+
+.login-group a{
+    color: #D9D9D9;
+    font-size: 12px;
+    margin-left: 55px;
+}
+
+
+
+
+/* register */
+
+
+.register-box1{
+    background-color: #38343442;
+}
+
+.form-box1{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background-color: #353232 ;
+    padding: 5px;
+}
+.button-box1{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    background-color: #211e1a;
+    border-radius: 10px;
+}
+
+
+.register-button{
+    padding: 10px 34px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline:none;
+    position: relative;
+    color:#D9D9D9;
+   font-size: 18px;
+    border-radius: 10px;
+
+}
+#btn1{
+    top:0;
+    left:0;
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    background-color: #FFA629;
+    transition: .5s;
+    border-radius: 10px;
+    color: #D9D9D9 ;
+    margin-left: 100px;  
+}
+
+.register-group{
+    margin: 10PX 100PX;
+  
+}
+
+   
+.input-box span{
+    color:#D9D9D9;
+    font-size: 12px;
+    margin-left: -12px;
+    display: flex;
+    margin-bottom: 5px;
+  
+
+}
+
+.register-group input{
+    border: 1px solid #FFA629;
+    background-color: #353232;
+    border-radius: 5px;
+    width: 207px;   
+    height: 30px;
+    margin-left:-14px;
+}
+
+.input-firstname{
+    color: #D9D9D9;
+    font-size: 12px;
+    margin-top: 5px;
+   
+}
+.input-firstname span{
+    margin-left: -13px;
+}
+
+
+.input-firstname input{
+    width: 92px;
+    display: flex;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+.input-lastname{
+    color: #D9D9D9;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.input-lastname span{
+    margin-left: -13px;
+}
+
+
+.input-lastname input{
+    width: 92px;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.name-area{
+    display: flex;
+    
+}
+
+
+.button-login{
+    display: block;
+    margin:  10px 70px;
+  
+}
+.submit-btn{
+    color: #0C0B0B;
+    background-color: #FFA629;
+    width: 80px;
+    height: 27px;
+    border-radius: 5px;
+    display: block;
+    margin-left: -20px;
+ 
+   
+}
+
+.input-group a{
+    color: #D9D9D9;
+    font-size: 12px;
+    margin-left: 55px;
+} 
 
 
 
