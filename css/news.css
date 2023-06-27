@@ -193,7 +193,7 @@ position: relative;
     grid-template-columns:  repeat(2, 1fr);
     /* position: relative; */
     grid-gap: 30px;
-    width: 1250px; 
+    width: 1264x; 
 
    
  }
@@ -277,10 +277,10 @@ position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 0 auto; */
     background-color: #1F1928;
     font-size: 18px;
     cursor: pointer;
+    margin-top: 10px;
     
 
 }
@@ -288,7 +288,7 @@ position: relative;
 .container{
     padding: 10px;
     column-gap: 15px;
-  /* margin-right: -50px; */
+  
 
 }
 
@@ -310,11 +310,11 @@ position: relative;
 /* <!-- 最下面footer --> */   
 
 footer{
-    /* background-color: #1F1928; */
+    
     color: #D9D9D9;
     padding-top: 30px;
     margin-top: 60px;
-    /* position: absolute; */
+   
 
 }
 .footer-content{
