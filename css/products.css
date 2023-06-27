@@ -195,7 +195,7 @@ header{
 }
 
 .list{
-   margin-left: 480px
+   margin-left: 475px
    
 }
 
@@ -265,6 +265,9 @@ header{
     background-color: #353232;
     text-align: center;
     padding: 30px 20px;
+    width: 280px;
+    height: 500px;
+    transition: 1s;
 }
 
 .game-box img{
@@ -286,16 +289,21 @@ header{
     border-radius: 5px;
     padding:8px 25px ;
     text-decoration: none;
-
+    width: 70px;
+    height: 18px;
+    transition: 1s;
 }
 
 .btn:hover{
     letter-spacing: 1px ;
+    transition: 1s;
 }
 
 .game-area .game .game-box:hover{
     box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
     transform: scale(1.03);
+    transition: 1s;
+   
 }
 /* 
 @media(max-width:768px){

@@ -129,7 +129,7 @@ header{
 /* <!-- 上方NEWS --> */
 
 .banner-area{
-    width: 1250px; 
+    width: 100%; 
     height: 400px;
     background-image: url(../img/NEWSBG.png);
     margin: 0 auto;
