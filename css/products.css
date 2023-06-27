@@ -190,13 +190,13 @@ header{
 /* <!-- 選擇欄 --> */
 
 .list-area{
-  
-   
+ 
+    
 }
 
 .list{
-    /* justify-content: space-between; */
-    margin: 0 auto; 
+   margin-left: 480px
+   
 }
 
 
@@ -208,6 +208,7 @@ header{
     padding: 10px 20px ; 
     border-radius:10px;
     text-decoration: none;  
+    margin: 0 5px;
     
 }
 
@@ -227,7 +228,7 @@ header{
     background-color: #353232;
     border-radius: 10px;
     align-items: center;
-    margin-left: 130px;
+    margin-right: 130px;
 
 }
 
@@ -296,12 +297,12 @@ header{
     box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
     transform: scale(1.03);
 }
-
+/* 
 @media(max-width:768px){
     .game-area{
         padding: 20px;
     }
-}
+} */
 
 .game-box:nth-child(2n){
     background-color: #5A4016;
