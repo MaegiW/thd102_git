@@ -125,7 +125,7 @@ header{
 .login button{
     background-color: #1F1928;
     border: none;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 
@@ -140,7 +140,7 @@ header{
     display: none;
     justify-content: center;
     align-items: center;
-    /* z-index: 2; */
+    z-index: 3;
 
 }   
 
@@ -217,7 +217,7 @@ header{
     margin-bottom: 10px;
     border-radius: 5px;
     margin-left: -14px;
-
+    color: #D9D9D9;
 }
     
 .checkbox{
@@ -267,7 +267,7 @@ header{
 /* register */
 
 
-.register-box1{
+/* .register-box1{
     background-color: #38343442;
 }
 
@@ -404,7 +404,7 @@ header{
     font-size: 12px;
     margin-left: 55px;
 } 
-
+ */
 
 
 
