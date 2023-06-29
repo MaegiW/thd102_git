@@ -136,23 +136,20 @@ header{
 /* login */
 
 .poppup{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    top: -630px;
+    position: fixed;
+    top: 0;
     display: none;
-    justify-content: center;
-    align-items: center;
     z-index: 3;
-
 }   
 
 .form-box{
     width: 380px;
     height: 380px;
     position: relative;
-    margin: 6% auto;
+    margin: 130px 450px;
     background-color: #353232 ;
     padding: 5px;
 }
