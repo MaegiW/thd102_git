@@ -6,3 +6,8 @@ document.querySelector(".close-btn").addEventListener("click", function(){
     document.querySelector(".poppup").style.display = "none";
 })
 
+
+//swiper
+
+
+
