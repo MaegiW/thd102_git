@@ -123,8 +123,15 @@ header{
 
 .login{
     padding-right: 60px;
+
     
 }
+.login button{
+    background-color: #1F1928;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* login */
 
