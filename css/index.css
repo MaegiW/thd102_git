@@ -440,10 +440,9 @@ header{
     margin-bottom: 20px;
     font-weight: bold;
     line-height: 1.2;
-    
-   
-    
 }
+
+
 
 .top-center_text p{
     font-size: 32px;
@@ -461,6 +460,8 @@ header{
     position:relative;
 
 }
+
+
 .top-center_text a:after{
     content:"";
     display:block;
@@ -476,6 +477,8 @@ header{
     width: 100%;
     left: 0;
 }
+
+
 
 
 .top-center img{
@@ -509,12 +512,15 @@ header{
 .news ul{
     max-width: 1280px;
     display: flex;
+   
 }
 
 .news li{
-    width: 322px;
+    width: 320px;
+    padding: 10px;
     background-color: #fff;
-    margin-left: 80px;
+   margin: 0 auto;
+    /* border: 1px solid #353232; */
 }
 .news img{
     width: 100%;
@@ -553,6 +559,12 @@ header{
     color: #000;
     
 }
+
+.news a:hover{
+    opacity: 0.8;
+
+}
+
 
 
 
@@ -638,6 +650,10 @@ header{
     
 }
 
+.wrapper{
+    max-width: 1200px;
+}
+
 .bottom h1{
     font-size: 40px;
     text-align: center;
@@ -651,13 +667,15 @@ header{
     white-space: nowrap;
     cursor: pointer;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-.carousel img{
+.carousel img {
     height: 413px;
     object-fit: cover;
     width: calc(100% / 4);
-    padding-left: 40px;
+    padding-left: 10px;
+    /* margin-left: 10px; */
     
    
 }
@@ -673,21 +691,21 @@ header{
 }
 
 .bottom i{
-    height: 70px;
-    width: 70px;
-    font-size: 40px;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
     text-align: center;
-    line-height: 70px;
+    line-height: 50px;
     background: #000;
     border-radius: 50%;
     cursor: pointer;
-
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 5;
 }
 .bottom i:first-child{
-    left: -20px;
+    left:5px;
 }
 
 .bottom i:last-child{
@@ -748,4 +766,28 @@ footer{
     
 }
 
+
+
+/******************* RWD start *********************/
+
+@media screen and (max-width: 414px) {
+
+.header{
+    width: auto;
+ }
+
+
+
+
+
+ /* 熱門 */
+ 
+.carousel img{
+    width: 100%;
+}
+ 
+    
+    
+  
+}/* END */
 
