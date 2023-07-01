@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeru-首頁</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="shortcut icon" href="./img/小logo.png" />
     <link rel="bookmark" href="./img/小logo.png" />
-    <title>Nigeru-首頁</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
 </head>
 <body>
   <!-- 最上header -->
@@ -152,21 +154,21 @@
     <div class="news">
         <h1>最新消息</h1>
         <ul>
-            <li>
+            <li  data-aos="zoom-out">
                 <img src="./img/summer1.png" alt="">
                 <h3>2023/6/20</h3>
                 <p>暑假夏最涼活動學生優惠再度來襲!</p>
                 <a href="./news.html">了解更多</a>
             </li>
             
-            <li>
+            <li  data-aos="zoom-out">
                 <img src="./img/HBD6.png" alt="">
                 <h3>2023/6/01</h3>
                 <p> 六月壽星有好康!!</p>
                 <a href="./news.html">了解更多</a>
             </li>
 
-            <li>
+            <li  data-aos="zoom-out">
                 <img src="./img/newG1.png" alt="">
                 <h3>2023/2/20</h3>
                 <p>全新恐怖密室登場！緯育女子高校!快來預約!</p>
@@ -181,6 +183,7 @@
 
     <div class="wrap">
         <h1>密室逃脫流程</h1>
+        
         <!-- item 1 -->
         <div class="item">
             <div class="pic">
@@ -283,7 +286,19 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.js"></script>
+
+    <script>
+        AOS.init({
+            // once: Infinity,
+            // easing: 'ease-out-back',
+            offset:400,
+			duration: 1000
+        });
+      </script>
+
+      
 
 </body>
 </html>
