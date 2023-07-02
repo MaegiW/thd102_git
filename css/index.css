@@ -668,6 +668,7 @@ header{
     cursor: pointer;
     overflow: hidden;
     scroll-behavior: smooth;
+    margin-left: 50px;
 }
 
 .carousel img {
@@ -687,7 +688,7 @@ header{
 
 
 .carousel img:first-child{
-    margin-left: 50px;
+    margin-right: 30px;
 }
 
 .bottom i{
