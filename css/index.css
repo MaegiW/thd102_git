@@ -45,7 +45,7 @@ header{
 
 }
 .header_left nav > ul > li{
-    margin-left: 25px;
+    /* margin-left: 25px; */
     padding-left: 40px;
 }
 
@@ -458,8 +458,13 @@ header{
     color: #FFA629;
     font-size:32px ;
     position:relative;
-
 }
+
+.top-center_text i{
+    margin-left: 10px;
+}
+
+
 
 
 .top-center_text a:after{
@@ -668,7 +673,7 @@ header{
     cursor: pointer;
     overflow: hidden;
     scroll-behavior: smooth;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 .carousel img {
@@ -688,7 +693,7 @@ header{
 
 
 .carousel img:first-child{
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .bottom i{
