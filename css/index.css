@@ -778,9 +778,23 @@ footer{
 
 @media screen and (max-width: 414px) {
 
-.header{
-    width: auto;
+.logo img{
+    font-size: 20px;
+}
+
+header{
+    /* width: auto; */
  }
+
+header .nav-list{
+    /* padding: 0 20px; */
+}
+
+header .nav-list{
+    display: grid;
+
+}
+
 
 
 
