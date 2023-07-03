@@ -778,22 +778,30 @@ footer{
 
 @media screen and (max-width: 414px) {
 
+header{
+    width:100%;
+    padding: 5px;
+    /* flex-direction: column;
+    align-items: flex-start;
+} */
+}
+
 .logo img{
-    font-size: 20px;
+    background-position: right;
 }
 
 header{
-    /* width: auto; */
+    width: auto;
  }
 
 header .nav-list{
-    /* padding: 0 20px; */
+    padding: 0 20px;
 }
 
 header .nav-list{
     display: grid;
 
-}
+} 
 
 
 
@@ -802,7 +810,7 @@ header .nav-list{
 
  /* 熱門 */
  
-.carousel img{
+ .carousel img{
     width: 100%;
 }
  
@@ -811,3 +819,4 @@ header .nav-list{
   
 }/* END */
 
+ 

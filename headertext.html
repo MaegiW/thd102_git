@@ -4,35 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/reset.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="nav-bar">
-                <li class="logo"><a href=""><img src="./img/LOGO.png" alt="logo"></a></li>
-                <input type="checkbox" id="check">
-                <span class="menu">
-                    <li><a href="#"></a>關於NIGERU</li>
-                    <li><a href="#"></a>最新消息</li>
-                    
-                    <li class="showList">
-                        <a href="./products.html">密室主題 <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                            <ul class="dropdown">
-                                <li><a href="./game.html">倖存者</a></li>
-                                <li><a href="./game.html">娃娃</a></li>
-                                <li><a href="./game.html">嚇水道</a></li>
-                                <li><a href="./game.html">傘</a></li>
-                                <li><a href="./game.html">三号室</a></li>
-                                <li><a href="./game.html">緯育高校女子</a></li>
-                            </ul>
-                    </li>
-                    <li><a href="#"></a>聯絡我們</li>
-                </span>
-            </ul>
-        </nav>
-    </header>
-    
+    <link rel="stylesheet" href="./css/headertext.css">
+  </head>
+  <body>
+      <header>
+          <div class="header_left">
+              <div class="logo">
+                  <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+              </div>
+              <nav>
+                  <ul class="navbar">
+                      <li class="nav-item"><a href="./about_us.html">關於NIGERU</a></li>
+                      <li class="nav-item"><a href="./news.html">最新消息</a></li>
+                      <li class="showList">
+                          <a href="./products.html">密室主題 <i class="fa-solid fa-chevron-down"></i></a>
+                          <ul class="dropdown">
+                              <li><a href="./game.html">倖存者</a></li>
+                              <li><a href="./game.html">娃娃</a></li>
+                              <li><a href="./game.html">嚇水道</a></li>
+                              <li><a href="./game.html">傘</a></li>
+                              <li><a href="./game.html">三号室</a></li>
+                              <li><a href="./game.html">緯育高校女子</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item"><a href="./contact_us.html">聯絡我們</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="header_right">
+              <div class="button">
+                  <a href="./reservation.html">線上預約</a>
+              </div>
+              <div class="login">
+                  <button type="button" id="loginbutton"><img src="./img/login.png"></button>
+              </div>
+          </div>
+          <div id="hamburger"></div>
+          <div class="menu">
+              <a href="./about_us.html">關於NIGERU</a>
+              <a href="./news.html">最新消息</a>
+              <a href="./products.html">密室主題</a>
+              <a href="./contact_us.html">聯絡我們</a>
+          </div>
+      </header>
+  
+      <script>
+          // Toggle mobile menu
+          const hamburger = document.getElementById("hamburger");
+          const menu = document.querySelector(".menu");
+  
+          hamburger.addEventListener("click", () => {
+              menu.classList.toggle("show");
+          });
+      </script>
+
+
+
 </body>
 </html>
