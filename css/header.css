@@ -35,17 +35,13 @@ header{
 
 .logo{
     padding-left: 60px;
-    /* flex-grow: 1; */
+ 
 }
-
-
-
-
 
 .header_left nav > ul{
     display: flex;
     list-style: none;
-    flex-grow: 1;
+    
 
 
 }
@@ -84,7 +80,7 @@ header{
     padding: 5px;
     text-decoration: none;
     color: #D9D9D9;
-    background-color: #1F1928;
+    /* background-color: #1F1928; */
     text-align: center;
     box-sizing: border-box;
 
@@ -131,8 +127,63 @@ header{
     padding-right: 60px;
    
 }
+
+.login i{
+    font-size: 20px;
+}
+
+
 .login button{
     background-color: #1F1928;
     border: none;
     cursor: pointer;
+}
+
+#menu-icon{
+    font-size: 30px;
+    color: #D9D9D9;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+    
+}
+
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 40vh;
+        background-color: #1F1928;
+       
+    }
+
+    .header_left nav > ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+
+    .header_left nav > ul > li >a{
+        display: block;
+        margin: 15px 0;
+        color: #D9D9D9;
+        font-size: 18px;
+    }
+  
+    .navbar.open{
+        right: 0;
+    }
+
+
+
+    }
+
+@media (max-width: 414px){
+    
 }
