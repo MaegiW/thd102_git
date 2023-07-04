@@ -73,14 +73,16 @@ header{
     list-style: none;
     display: none; 
     position: absolute;
+    font-size: 18px;
+
     
 }
 .dropdown a{
     display: block;
-    padding: 5px;
+    padding: 15px 0;
     text-decoration: none;
     color: #D9D9D9;
-    /* background-color: #1F1928; */
+    background-color: #1F1928;
     text-align: center;
     box-sizing: border-box;
 
@@ -148,7 +150,7 @@ header{
     
 }
 
-@media (max-width: 1090px){
+@media (max-width: 920px){
     #menu-icon{
         display: block;
     }
@@ -157,9 +159,11 @@ header{
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 270px;
-        height: 40vh;
+        /* left: 0; */
+        width: 100%;
+        height: 60vh;
         background-color: #1F1928;
+        /* display: initial; */
        
     }
 
@@ -174,7 +178,20 @@ header{
         margin: 15px 0;
         color: #D9D9D9;
         font-size: 18px;
+       text-align: center;
     }
+
+    .dropdown a{
+        position: relative;
+        width: 100%;
+        /* text-align: center; */
+    }
+
+    .button a{
+        flex-direction: column;
+    }
+
+
   
     .navbar.open{
         right: 0;
@@ -185,5 +202,5 @@ header{
     }
 
 @media (max-width: 414px){
-    
+
 }
