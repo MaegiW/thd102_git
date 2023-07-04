@@ -426,6 +426,7 @@ body{
     width: calc(100% / 4);
     padding-left: 10px;
     /* margin-left: 10px; */
+    pointer-events: none;
     
    
 }
