@@ -12,7 +12,8 @@
     <link rel="shortcut icon" href="./img/slogo.png">
     <link rel="bookmark" href="./img/slogo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9.1.1/modules/scrollbar/scrollbar.min.css" rel="stylesheet">
 </head>
 <body>
   <!-- 最上header -->
@@ -52,7 +53,6 @@
         <div class="login">
             <button type="button" id="loginbutton"><i class="fa-solid fa-user" style="color: #ffa629;"></i></button>
         </div>  
-        
         <div class="bx bx-menu" id="menu-icon"></div>
     </div> 
 
@@ -115,32 +115,33 @@
         </div>
     </div>
     <!-- 最新消息 -->
+       
     <div class="news">
         <h1>最新消息</h1>
-        <ul>
-            <li>
-                <img src="./img/summer1.png" alt="">
-                <h3>2023/6/20</h3>
-                <p>暑假夏最涼活動學生優惠再度來襲!</p>
-                <a href="./news.html">了解更多</a>
-            </li>
-            
-            <li>
-                <img src="./img/HBD6.png" alt="">
-                <h3>2023/6/01</h3>
-                <p> 六月壽星有好康!!</p>
-                <a href="./news.html">了解更多</a>
-            </li>
+            <ul>
+                <li class="news1">
+                    <img src="./img/summer1.png" alt="">
+                    <h3>2023/6/20</h3>
+                    <p>暑假夏最涼活動學生優惠再度來襲!</p>
+                    <a href="./news.html">了解更多</a>
+                </li>
+                
+                <li class="news2">
+                    <img src="./img/HBD6.png" alt="">
+                    <h3>2023/6/01</h3>
+                    <p> 六月壽星有好康!!</p>
+                    <a href="./news.html">了解更多</a>
+                </li>
 
-            <li>
-                <img src="./img/newG1.png" alt="">
-                <h3>2023/2/20</h3>
-                <p>全新恐怖密室登場！緯育女子高校!快來預約!</p>
-                <a href="./news.html">了解更多</a>
-            </li>
-            
-        </ul>
-    </div>
+                <li class="news3">
+                    <img src="./img/newG1.png" alt="">
+                    <h3>2023/2/20</h3>
+                    <p>全新恐怖密室登場！緯育女子高校!快來預約!</p>
+                    <a href="./news.html">了解更多</a>
+                </li>
+            </ul>
+        
+    </div> 
     
 
     <!-- 遊戲流程 -->
@@ -259,7 +260,6 @@
 
 
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.js"></script>
@@ -270,7 +270,11 @@
             // easing: 'ease-out-back',
             offset: 50,
 			duration: 1000
-        });
+        });//END
+
+
+       
+
       </script>
 
       

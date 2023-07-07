@@ -33,3 +33,12 @@ document.querySelector(".close-btn").addEventListener("click", function(){
 })
 
 
+// 漢堡
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+}
+

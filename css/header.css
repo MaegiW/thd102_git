@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    background-color:rgba(51, 37, 52, 0.2) ;
+    background-color:rgba(30, 18, 31, 0.696)   ;
     position: relative;
     /* opacity: .8; */
     position:sticky;
@@ -129,16 +129,17 @@ header{
 
 .login{
     padding-right: 60px;
+    
    
 }
 
 .login i{
     font-size: 20px;
+    
 }
 
-
 .login button{
-    background-color: #1F1928;
+    background-color: rgba(30, 18, 31, 0.696) ;
     border: none;
     cursor: pointer;
 }
@@ -164,6 +165,10 @@ header{
         display: block;
     }
 
+    .logo{
+        padding: 30px;
+    }
+
     .navbar{
         position: fixed;
         top: 60px;
@@ -171,10 +176,11 @@ header{
         transform: translateX(100%);
         /* left: 0; */
         width: 100%;
-        /* height: vh; */
         background-color:rgba(30, 18, 31, 0.696) ;
         transition: transform .7s;
         /* display: initial; */
+        flex-direction: column;
+        overflow: hidden;
        
     }
 
@@ -205,7 +211,8 @@ header{
     }
     
     #loginbutton{
-        background-color: #1F1928;
+        background-color:rgba(30, 18, 31, 0.696) ;
+        margin-bottom: 10px;
         border: none;
         cursor: pointer;
         font-size: 20px;
@@ -246,5 +253,13 @@ header{
     }
 
 
+    @media (max-width: 428px){
 
+        .logo{
+            padding: 0;
+        }
+    
+    
+        
+    }
 

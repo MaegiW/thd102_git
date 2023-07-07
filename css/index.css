@@ -3,7 +3,7 @@
 @import url(./footer.css);
 
 *{
-    outline: solid 1px red;
+    /* outline: solid 1px red; */
 }
 body{
   
@@ -310,8 +310,6 @@ body{
 
 
 
-
-
 /* <!-- 遊戲流程 --> */
 
 .wrap{
@@ -340,20 +338,21 @@ body{
     /* margin-top: 60px; */
     width: 904px;
     margin: auto;
-  
+    
     
 }
 
 
 .text{
     border: 1px solid #FFA629;
-    width: 400px;
-    height: 235px;
+    max-width: 400px;
+    max-height: 235px;
     margin-top: 30px;
     background-color:  rgba(0, 0, 0, 0.5);
     margin-left: -10px;
     margin-right: -10px;
     z-index: 1;
+    
    
 
 }
@@ -483,28 +482,33 @@ body{
         background-color: #1F1928;
         background-image: none;
     }
-    .news h1{
-        color: #D9D9D9;
+ 
+    .news2 {
+        display: none;
     }
-    
-
-    .new li{
-        margin: 15px auto;
+    .news3{
+        display: none;
     }
 
     .wrap{
-
+       margin-left: 60px
     }
     
+    .pic img{
+        margin-right: -415px;
+        
+    }
+   
+    .text{
+        margin-left: -10px ;
+       order: 1;
+    }
 
-
-
-
- /* 熱門 */
+     /* 熱門 */
  
  .carousel img{
     width: 100%;
-}
+    }
  
     
     
@@ -523,10 +527,15 @@ body{
         margin: 15px auto;
     }
     
+    
 }
 
 
 @media (max-width: 428px){
+
+    .top-center_text {
+        margin: 20px auto;
+    }
 
     .top-center img{
         display: none;
