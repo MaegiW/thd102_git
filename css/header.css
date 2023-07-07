@@ -14,7 +14,6 @@ header{
     align-items: center;
     background-color:rgba(30, 18, 31, 0.696)   ;
     position: relative;
-    /* opacity: .8; */
     position:sticky;
     top:0;
     z-index: 2;
@@ -161,6 +160,7 @@ header{
 
 
 @media (max-width: 970px){
+    
     #menu-icon{
         display: block;
     }
@@ -185,7 +185,7 @@ header{
     }
 
     .header_left nav > ul {
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: flex-start;
         
     }
@@ -195,7 +195,8 @@ header{
         margin: 15px 0;
         color: #D9D9D9;
         font-size: 18px;
-       text-align: center;
+       text-align: center;       
+       
     }
 
     .nav-item.-mobile-show{
@@ -206,11 +207,11 @@ header{
 
     .dropdown{
         position: relative;
-        /* width: 100%; */
+        width: 100%;
         /* text-align: center; */
     }
     
-    #loginbutton{
+    #loginbutton1{
         background-color:rgba(30, 18, 31, 0.696) ;
         margin-bottom: 10px;
         border: none;

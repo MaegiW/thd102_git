@@ -326,3 +326,22 @@ position: relative;
 
 
 
+@media (max-width: 768px){
+
+    .news{
+     grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    .new1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+
+
+

@@ -7,47 +7,33 @@
     <link rel="stylesheet" href="./css/headertext.css">
   </head>
   <body>
-      <header>
-          <div class="header_left">
-              <div class="logo">
-                  <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
-              </div>
-              <nav>
-                  <ul class="navbar">
-                      <li class="nav-item"><a href="./about_us.html">關於NIGERU</a></li>
-                      <li class="nav-item"><a href="./news.html">最新消息</a></li>
-                      <li class="showList">
-                          <a href="./products.html">密室主題 <i class="fa-solid fa-chevron-down"></i></a>
-                          <ul class="dropdown">
-                              <li><a href="./game.html">倖存者</a></li>
-                              <li><a href="./game.html">娃娃</a></li>
-                              <li><a href="./game.html">嚇水道</a></li>
-                              <li><a href="./game.html">傘</a></li>
-                              <li><a href="./game.html">三号室</a></li>
-                              <li><a href="./game.html">緯育高校女子</a></li>
-                          </ul>
-                      </li>
-                      <li class="nav-item"><a href="./contact_us.html">聯絡我們</a></li>
-                  </ul>
-              </nav>
+
+    <header class="header-area">
+        <!-- site-navbar start -->
+        <div class="navbar-area">
+          <div class="container">
+            <nav class="site-navbar">
+              <!-- site logo -->
+              <a href="#home" class="site-logo"><img src="./img/LOGO.png" alt=""></a>
+      
+              <!-- site menu/nav -->
+              <ul>
+                <li><a href="#">關於NIGERU</a></li>
+                <li><a href="#">最新消息</a></li>
+                <li><a href="#">密室主題</a></li>
+                <li><a href="#">聯絡我們</a></li>
+              </ul>
+      
+              <!-- nav-toggler for mobile version only -->
+              <button class="nav-toggler">
+                <span></span>
+              </button>
+            </nav>
           </div>
-          <div class="header_right">
-              <div class="button">
-                  <a href="./reservation.html">線上預約</a>
-              </div>
-              <div class="login">
-                  <button type="button" id="loginbutton"><img src="./img/login.png"></button>
-              </div>
-          </div>
-          <div id="hamburger"></div>
-          <div class="menu">
-              <a href="./about_us.html">關於NIGERU</a>
-              <a href="./news.html">最新消息</a>
-              <a href="./products.html">密室主題</a>
-              <a href="./contact_us.html">聯絡我們</a>
-          </div>
-      </header>
-  
+        </div><!-- navbar-area end -->
+      
+        
+     
       <script>
           // Toggle mobile menu
           const hamburger = document.getElementById("hamburger");
