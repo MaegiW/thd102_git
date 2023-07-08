@@ -369,6 +369,10 @@ position: relative;
     .text h1{
         text-align: center;
     }
+
+    .text a{
+        font-size: 15px;
+    }
     
 
 }

@@ -321,12 +321,7 @@ body{
     transition: 1s;
    
 }
-/* 
-@media(max-width:768px){
-    .game-area{
-        padding: 20px;
-    }
-} */
+
 
 .game-box:nth-child(2n){
     background-color: #5A4016;
@@ -375,5 +370,51 @@ body{
 }
 
 
+/******************* RWD start *********************/
+
+@media screen and (max-width: 970px) {
+
+    /* login */
+
+    .form-box {
+        width: 300px;
+        margin: 160px auto;
+
+    }
+
+    .loginbutton{
+        padding: 8px 30px ;
+
+    }
+
+    .button-box{
+        width: 200px;
+    }
+
+    .close-btn{
+        margin-top: 5px;
+    }
+
+
+    /* <!-- 選擇欄 --> */
+    .list{
+        margin: 0 30px;
+    }
+
+    .searchbox{
+        display: none;
+    }
+
+    /* <!-- 遊戲區 --> */
+
+}
+
+
+
+@media(max-width:768px){
+    .game-area{
+        /* padding: 20px; */
+    }
+}
 
 
