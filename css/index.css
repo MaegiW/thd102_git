@@ -492,7 +492,11 @@ body{
     .news3{
         display: none;
     }
-
+    .item{
+        position: relative;
+        display: flex;
+        width: auto;
+     }
     .pic{
         /* margin-right: 0; */
         width: 100%;
@@ -511,22 +515,21 @@ body{
         height: 80%;
         position: absolute;
         left: 7%;
-        margin-bottom: 20px;
+       
 
     }
 
     .text h2{
         font-size: 18px;
+        padding: 20px;
     }
 
     .text p{
        font-size: 16px;
+       padding: 15px;
     }
    
-    .item{
-        display: flex;
-        width: auto;
-     }
+    
      /* 熱門 */
  
     .carousel img{
