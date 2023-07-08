@@ -12,13 +12,12 @@
         margin: 0;
         padding: 0;
       }
-        .timeline{
+        .timelineM{
           width: 700px;
-          
           display: flex;
           justify-content: space-between;
         }
-        .timeline::after{
+        .timelineM::after{
           content: "";
           width: 650px;
           height: 10px;
@@ -27,7 +26,7 @@
           left: 25px;
           border-bottom:2px solid red;
         }
-        .timeline li{
+        .timelineM li{
           
           flex-direction: column;
           display: flex;
@@ -42,7 +41,7 @@
         }
 
         @media screen and (max-width: 970px){
-          .timeline{
+          .timelineM{
             flex-direction: column;
             width: 100px;
             height: 500px;
@@ -50,7 +49,7 @@
             align-items: space-evenly;
             justify-content: space-evenly;
           }
-          .timeline::after{
+          .timelineM::after{
             content: "";
             width: 10px;
             height: 288px;
@@ -78,7 +77,7 @@
   </head>
   <body>
 
-    <ul class="timeline">
+    <ul class="timelineM">
       <li data-year="2022/05" data-text="誕生" class="dateImg">
         <div class="circle"></div>
         <p class="title">誕生</p>

@@ -20,7 +20,21 @@ for( let i = 0; i< dateImg.length; i++){
         text.innerText= text_area[i];
      })
 
+     dateImg[i].addEventListener("click", function() {
+      //移除所有 dateImg 的樣式
+      for (let j = 0; j < dateImg.length; j++) {
+        dateImg[j].style.backgroundColor = "";
+      }
+  
+      // 添加當前點擊的 dateImg 的樣式
+      dateImg[i].style.backgroundColor = "gray"; // 修改為所需的顏色
+      selectImg.setAttribute("src", photo[i]);
+      text.innerText = text_area[i];
+    });
+
 }
+
+
 
 
 //login1

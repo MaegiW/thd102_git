@@ -144,12 +144,12 @@ body{
 /* <!-- 上方NEWS --> */
 
 .banner-area{
-    width: 100%; 
+    max-width: 100%; 
     height: 400px;
     background-image: url(../img/NEWSBG.png);
     margin: 0 auto;
-
-
+    background-repeat: no-repeat;
+    
 }
 
 .banner-area h1{
@@ -324,6 +324,41 @@ position: relative;
 
 }
 
+
+/******************* RWD start *********************/
+
+@media screen and (max-width: 970px) {
+
+    /* login */
+
+    .form-box {
+        width: 300px;
+        margin: 160px auto;
+
+    }
+
+    .loginbutton{
+        padding: 8px 30px ;
+
+    }
+
+    .button-box{
+        width: 200px;
+    }
+
+    .close-btn{
+        margin-top: 5px;
+    }
+
+    /* 中間區塊 */
+
+    .news1{
+        width:80%;
+
+    }
+    
+
+}
 
 
 @media (max-width: 768px){

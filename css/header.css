@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    background-color:rgba(30, 18, 31, 0.696)   ;
+    background-color:rgba(21, 9, 21, 0.696) ;
     position: relative;
     position:sticky;
     top:0;
@@ -82,7 +82,7 @@ header{
     padding: 15px 0;
     text-decoration: none;
     color: #D9D9D9;
-    background-color:rgba(51, 37, 52, 0.2) ;
+    background-color:rgba(25, 11, 25, 0.696)   ;
     text-align: center;
     box-sizing: border-box;
 
@@ -138,7 +138,7 @@ header{
 }
 
 .login button{
-    background-color: rgba(30, 18, 31, 0.696) ;
+    background-color:rgba(21, 9, 21, 0.696) ;
     border: none;
     cursor: pointer;
 }
@@ -176,7 +176,7 @@ header{
         transform: translateX(100%);
         /* left: 0; */
         width: 100%;
-        background-color:rgba(30, 18, 31, 0.696) ;
+        background-color:rgba(25, 11, 25, 0.696)  ;
         transition: transform .7s;
         /* display: initial; */
         flex-direction: column;
