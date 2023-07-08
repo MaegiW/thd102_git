@@ -482,6 +482,9 @@ body{
         background-color: #1F1928;
         background-image: none;
     }
+    .news h1 {
+        color: #D9D9D9;
+    }
  
     .news2 {
         display: none;
@@ -490,23 +493,40 @@ body{
         display: none;
     }
 
+    .pic{
+        /* margin-right: 0; */
+        width: 100%;
+    }
    
     .pic img{
-        /* margin-right: -415px; */
-        float: left;
+        width: 100%;
         
     }
    
     .text{
-        margin-left: -418px ;
-       order: 1;
-    }
-    .text h2{
+        /* margin-left: -370px ;
+        margin-bottom: 35px; */
+        order: 1;
+        width: 90%;
+        height: 80%;
+        position: absolute;
+        left: 7%;
+        margin-bottom: 20px;
 
     }
+
+    .text h2{
+        font-size: 18px;
+    }
+
+    .text p{
+       font-size: 16px;
+    }
+   
     .item{
-            width: auto;
-        }
+        display: flex;
+        width: auto;
+     }
      /* 熱門 */
  
     .carousel img{
@@ -515,7 +535,7 @@ body{
    
 
     .wrap{
-        /* display: none; */
+        width: auto;
     }
  
     
