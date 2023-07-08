@@ -491,7 +491,7 @@ body{
     }
 
     .wrap{
-       margin-left: 60px
+       /* margin-left: 60px */
     }
     
     .pic img{
@@ -509,9 +509,12 @@ body{
  .carousel img{
     width: 100%;
     }
+    .item{
+        width: 0;
+    }
 
     .wrap{
-        display: none;
+        /* display: none; */
     }
  
     
