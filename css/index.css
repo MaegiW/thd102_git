@@ -509,6 +509,10 @@ body{
  .carousel img{
     width: 100%;
     }
+
+    .wrap{
+        display: none;
+    }
  
     
     
