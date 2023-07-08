@@ -5,44 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/headertext.css">
+
+    <style>
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+        .timeline{
+          width: 700px;
+          
+          display: flex;
+          justify-content: space-between;
+        }
+        .timeline::after{
+          content: "";
+          width: 650px;
+          height: 10px;
+          position: absolute;
+          top: 0;
+          left: 25px;
+          border-bottom:2px solid red;
+        }
+        .timeline li{
+          
+          flex-direction: column;
+          display: flex;
+          align-items: center;
+
+        }
+        .circle{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background-color: red;
+        }
+
+        @media screen and (max-width: 970px){
+          .timeline{
+            flex-direction: column;
+            width: 100px;
+            height: 500px;
+            margin: auto;
+            align-items: space-evenly;
+            justify-content: space-evenly;
+          }
+          .timeline::after{
+            content: "";
+            width: 10px;
+            height: 288px;
+            position: absolute;
+            top: 87px;
+            left: calc((100% - 21px) /2);
+            border-bottom:none;
+            border-right: 2px solid red;
+          }
+
+          .title{
+            position: relative;
+            left: -35px;
+            
+          }
+
+          .year{
+            position: relative;
+            left: 50px;
+            top: -16px;
+          }
+        }
+
+    </style>
   </head>
   <body>
 
-    <header class="header-area">
-        <!-- site-navbar start -->
-        <div class="navbar-area">
-          <div class="container">
-            <nav class="site-navbar">
-              <!-- site logo -->
-              <a href="#home" class="site-logo"><img src="./img/LOGO.png" alt=""></a>
-      
-              <!-- site menu/nav -->
-              <ul>
-                <li><a href="#">關於NIGERU</a></li>
-                <li><a href="#">最新消息</a></li>
-                <li><a href="#">密室主題</a></li>
-                <li><a href="#">聯絡我們</a></li>
-              </ul>
-      
-              <!-- nav-toggler for mobile version only -->
-              <button class="nav-toggler">
-                <span></span>
-              </button>
-            </nav>
-          </div>
-        </div><!-- navbar-area end -->
-      
-        
-     
-      <script>
-          // Toggle mobile menu
-          const hamburger = document.getElementById("hamburger");
-          const menu = document.querySelector(".menu");
+    <ul class="timeline">
+      <li data-year="2022/05" data-text="誕生" class="dateImg">
+        <div class="circle"></div>
+        <p class="title">誕生</p>
+        <p class="year">2022/05</p>
+      </li>
+      <li data-year="05/31" data-text="倖存者" class="dateImg">
+        <div class="circle"></div>
+        <p class="title">倖存者</p>
+        <p class="year">2022/05/31</p>
+      </li>
+      <li data-year="06/20" data-text="娃娃" class="dateImg">
+        <div class="circle"></div>
+        <p class="title">娃娃</p>
+        <p class="year">2022/06/20</p>
+      </li>
+      <!-- <li data-year="07/01" data-text="增加桌遊活動" class="dateImg"></li>
+      <li data-year="08/20" data-text="嚇水道" class="dateImg"></li>
+      <li data-year="10/20" data-text="傘" class="dateImg"></li>
+      <li data-year="2023/02" data-text="三号室" class="dateImg"></li>
+      <li data-year="05/20" data-text="緯育高校女子" class="dateImg"></li> -->
+  </ul> 
   
-          hamburger.addEventListener("click", () => {
-              menu.classList.toggle("show");
-          });
-      </script>
+     
+      
 
 
 

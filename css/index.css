@@ -222,12 +222,17 @@ body{
 }
 
 
-
-
 .top-center img{
     float: right;
     margin-right: 35px;
    
+}
+
+.bxs-door-open:before{
+    font-size: 45px;
+    position: absolute;
+    top: -7px;
+    left: 178px;
 }
 /* <!-- 最新消息 --> */
 
@@ -314,7 +319,8 @@ body{
 
 .wrap{
     max-width: 1280px;
-    height: 1964px;
+    height: 1900px;
+
     background-image: url(../img/Home1.png);
     margin: 0 auto;
     display: flex;
@@ -325,7 +331,7 @@ body{
 .wrap h1{
     font-size: 40px;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 0;
     color:#D9D9D9;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
@@ -468,15 +474,31 @@ body{
 
 @media screen and (max-width: 970px) {
 
-    
+    .top{
+        height: 100%;
+    }
+
     .top-center img {
         display: none;
     }
 
     .top-center_text {
-        margin: 40px auto;
+        margin: 40px auto;/
+    }
+    .top-center_text h1{
+        font-size: 60px;
+        margin: 0 auto;
     }
     
+
+    .top-center_text p {
+        font-size: 28px;
+        margin: 10px auto;
+    }
+    
+ 
+
+    /* NEW */
     
     .news{
         background-color: #1F1928;
@@ -484,6 +506,7 @@ body{
     }
     .news h1 {
         color: #D9D9D9;
+        padding: 30px;
     }
  
     .news2 {
@@ -492,11 +515,24 @@ body{
     .news3{
         display: none;
     }
+
+    /* 流程 */
     .item{
         position: relative;
         display: flex;
         width: auto;
      }
+
+     .wrap{
+        height: 1800px;
+       
+     }
+
+     .wrap h1 {
+        padding: 10px 0;
+     }
+
+     
     .pic{
         /* margin-right: 0; */
         width: 100%;
@@ -531,9 +567,13 @@ body{
    
     
      /* 熱門 */
- 
+    
+
+    .carousel{
+        margin: 0 20px;
+    }
     .carousel img{
-    width: 100%;
+        width: 100%;
     }
    
 
@@ -564,9 +604,7 @@ body{
 
 @media (max-width: 428px){
 
-    .top-center_text {
-        margin: 20px auto;
-    }
+
 
     .top-center img{
         display: none;
