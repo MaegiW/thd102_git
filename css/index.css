@@ -490,28 +490,29 @@ body{
         display: none;
     }
 
-    .wrap{
-       /* margin-left: 60px */
-    }
-    
+   
     .pic img{
-        margin-right: -415px;
+        /* margin-right: -415px; */
+        float: left;
         
     }
    
     .text{
-        margin-left: -10px ;
+        margin-left: -418px ;
        order: 1;
     }
+    .text h2{
 
-     /* 熱門 */
- 
- .carousel img{
-    width: 100%;
     }
     .item{
-        width: 0;
+            width: auto;
+        }
+     /* 熱門 */
+ 
+    .carousel img{
+    width: 100%;
     }
+   
 
     .wrap{
         /* display: none; */
