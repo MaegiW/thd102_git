@@ -185,7 +185,7 @@ header{
     }
 
     .header_left nav > ul {
-        /* flex-direction: column; */
+        flex-direction: column;
         justify-content: flex-start;
         
     }

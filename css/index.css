@@ -474,6 +474,30 @@ body{
 
 @media screen and (max-width: 970px) {
 
+    /* login */
+
+    .form-box {
+        width: 300px;
+        margin: 160px auto;
+
+    }
+
+    .loginbutton{
+        padding: 8px 30px ;
+
+    }
+
+    .button-box{
+        width: 200px;
+    }
+
+    .close-btn{
+        margin-top: 5px;
+    }
+
+
+
+    /* top */
     .top{
         height: 100%;
     }
