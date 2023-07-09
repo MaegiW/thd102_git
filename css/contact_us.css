@@ -152,20 +152,23 @@ body{
     width: 100%;
 }
 
+.productsM{
+    display: none;
+}
+
 /* <!-- 下面左右區域 --> */     
 
 
 
 .container{
     max-width:100% ;
+    height: auto;
     margin: auto;
     
-   
-
 }
 
 .contact-box{
-    height: 650px;
+    height: auto;
     display:flex ;
     justify-content: space-between;
     margin-top: 50px ;
@@ -257,8 +260,10 @@ body{
 
 
 .contact-right{
-    width: 640px;
+   display: block;
+    width: 50%;
     margin-left: 24px;
+    height: auto;
 }
 
 .transportation{
@@ -266,7 +271,7 @@ body{
     background-color: #353232;
     border-radius: 10px;
     height: 350px;
-    width: 450px;
+    width: 70%;
         
 }
 .transportation h2{
@@ -301,6 +306,8 @@ body{
     text-align: justify;
     padding: 15px;
     line-height: 1.2;
+   
+    width: 90%;
 
 }
 
@@ -328,15 +335,19 @@ body{
 
 
 .map{
+ 
     margin-top: 30px;
     /* position: absolute; */
-   
+}
+
+.mapM{
+    display: none;
 }
 
 
 
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 575px) {
 
     /* login */
 
@@ -347,16 +358,65 @@ body{
     }
 
     .loginbutton{
-        padding: 8px 30px ;
+        padding: 8px 23px ;
 
     }
 
     .button-box{
-        width: 200px;
+        width: 180px;
     }
 
     .close-btn{
         margin-top: 5px;
     }
+
+    /* 上圖 */
+
+    .products{
+        display: none;
+    }
+    .productsM{
+        display: block;
+    }
+    .productsM img{
+        width: 100%;
+    }
+
+    .contact-box{
+        display: block;
+        width: 100%;
+    }
+
+    /* 表單 */
+
+    .contact-left{
+        margin: 0 auto;
+        width: 70%;
+       
+    }
+    .input-row{
+        margin: 10px;
+    }
+
+
+    /* 右邊 */
+    .transportation{
+        width: 165%;
+        margin: 15px;
+    }
+
+    .information{
+        display: none
+    }
+
+    .map{
+        display: none;
+    }
+
+    .mapM{
+        display: block;
+        margin: 40px;
+    }
+   
 
 }
