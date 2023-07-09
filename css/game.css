@@ -195,10 +195,7 @@ body{
 
 }
 
-.gamepic{
-    display: flex;
-    
-}
+
 
 .gamepic img{
     max-width: 400px;
@@ -251,7 +248,7 @@ body{
 
 .mid-container li{
     border: 1px solid #FFA629;
-    margin: 20px;
+   
     width: 180px;
     height: 166px;
     border-radius: 5px;
@@ -259,14 +256,7 @@ body{
     
 }
 
-.mid-container i{
-    font-size: 60px;
-    padding-top: 20px; 
-    padding-left: 60px;
-    
 
-
-}
 
 li h3{
     font-size:20px;
@@ -303,8 +293,6 @@ li img{
     height: 670px;
     border-radius: 5px;
 
-
-
 }
 
 .notices-container h1{
@@ -316,11 +304,6 @@ li img{
 
 }
 
-
-.accordion{
-    margin: 20px 70px;
-    
-}
 
 .accordion li{
   border: 1px solid #FFA629; 
@@ -343,13 +326,6 @@ li img{
    
 }
 
-label::after{
-    content: '+';
-    margin-left: 410px;
-    font-size: 25px;
-    font-weight: 600;
-    position: absolute;
-}
 
 input[type="radio"] {
     display: none;
@@ -370,10 +346,7 @@ input[type="radio"] {
 
 }
 
-.accordion input[type="radio"]:checked + label::after{
-    content: " - ";
 
-}
 
 /* <!-- 右邊 --> */
 
@@ -417,7 +390,7 @@ h2{
     color: #D9D9D9;
     margin-bottom: 20px;
 }
-p{
+.pricearea p{
     color: #D9D9D9;
     margin-bottom: 30px;
 }
@@ -478,9 +451,50 @@ p{
 }
 
 
+
 /******************* RWD start *********************/
 
-@media screen and (max-width: 970px) {
+@media screen and (min-width: 992px) {
+    .gamepic{
+        display: flex;
+        
+    }
+
+    .mid-container li{
+        margin: 20px;
+    }
+
+    /* 三小圖 */
+
+    .mid-container i{
+        font-size: 60px;
+        padding-top: 20px; 
+        padding-left: 60px;
+    
+    }
+
+    /* 常見問題 */
+    label::after{
+        content: '+';
+        margin-left: 410px;
+        font-size: 25px;
+        font-weight: 600;
+        position: absolute;
+    }
+
+    .accordion input[type="radio"]:checked + label::after{
+        content: " - ";
+    
+    }
+
+    .accordion{
+        margin: 20px 70px;
+    }
+    
+}
+
+
+@media screen and (max-width: 575px) {
 
     /* login */
 
@@ -503,6 +517,12 @@ p{
         margin-top: 5px;
     }
 
+    /* 介紹遊戲 */
+    
+    .main-wrap{
+        /* margin-right: 20px; */
+        margin-left: 0;
+    }
 
     .main-container{
         display: block;
@@ -516,12 +536,110 @@ p{
     .gamepic{
         margin: 10px 45px;
     }
-
-
-    .label{
-        display: block;
-       
-
+    .gamepic img{
+        max-width:100%
     }
+    .label{
+        display: flex;
+        flex-direction: row;
+        margin: 20px auto;
+    }
+    .products p{
+        padding: 20px;
+    }
+
+
+    /* 三小塊 */
+    .mid-container{
+       margin-top: 15px;
+      
+    }
+
+    .icon{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        }
+
+    .mid-container i{
+        font-size: 35px;
+      
+    }
+
+    .mid-container li {
+        width: 100%;
+       height: auto;
+      
+    }
+
+    li img{
+        padding: 0;
+        width: 70%;
+    }
+
+    li h3{
+        /* display: none; */
+    }
+
+    .mid-container li{
+        padding-bottom: 10px;
+    }
+
+    .mid-container ul{
+        gap: 5px
+    }
+
+   /* 常見問題 */
+   .notices-container h1{
+    padding: 0;
+    margin-top: 30px ;
+   }
+
+   label::after{
+    content: '+';
+    margin-left: 265px;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    content: " - ";
+
+}
+
+.accordion li label{
+    font-size: 16px;
+}
+.answer p{
+    font-size: 16px;
+}
+
+.notices-container{
+    height: auto;
+}
+
+
+/* 右邊 */
+
+.container-right{
+    width: 80%;
+    margin: 45px;
+   /* display: none; */
+}
+.booking-card{
+    /* margin: 20px ; */
+}
+.pricearea {
+    margin: 20px 30px;
+    padding: 0;
+    width: 100%;
+}
+
+.booking-card a{
+    padding: 12px 60px;
+    margin-left: 65px;
+}
+   
 
 }
