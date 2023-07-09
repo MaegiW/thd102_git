@@ -405,9 +405,14 @@ body{
         margin: 15px;
     }
 
-    .transportation h2{
-        padding: 10px;
+    .area1{
+        margin: 0;
     }
+    .area1 p{
+        padding-bottom: 10px;
+    }
+
+   
 
     .information{
         display: none
