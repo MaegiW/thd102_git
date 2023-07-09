@@ -29,11 +29,11 @@ body{
 
 }   
 
-.form-box1{
+.form-box{
     width: 380px;
     height: 380px;
     position: relative;
-    margin: 130px 450px;
+    margin: 6% auto;
     background-color: #353232 ;
     padding: 5px;
 }
@@ -48,7 +48,7 @@ body{
 }
 
 
-.button-box1{
+.button-box{
     width: 220px;
     margin: 35px auto;
     position: relative;
@@ -111,7 +111,7 @@ body{
    display: block;
 }
 
-.box1 span{
+.box span{
     color: #D9D9D9;
     font-size: 12px;
     
@@ -146,7 +146,6 @@ body{
     font-size: 12px;
     margin-left: 55px;
 }
-
 
 
 /* <!-- 標題 --> */
@@ -265,14 +264,15 @@ body{
     height: 40px;
 }
 
-.datetime p{
+
+/* .datetime p{
     color: #D9D9D9;
     display: block;
     margin-top: 50px;
     font-size: 20px;
     margin-left: 60px;
     margin-bottom: 20px;
-}
+} */
 
 .time{
     display: flex;
@@ -416,4 +416,55 @@ button:active{
     .close-btn{
         margin-top: 5px;
     }
+    .main-wrapper{
+        display: block;
+    }
+
+    /* 右邊 */
+
+    .left-wrapper{
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .container select{
+        width: 80%;
+       
+    }
+
+    /* 注意事項 */
+    .notice{
+        display: none;
+    }
+
+    /* 左邊 */
+
+    .right-wrapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .right-wrapper p{
+        margin: 30px  10px;
+    }
+
+    .date{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .time{
+        width: 90%;
+        margin: 0 15px;
+
+    }
+
+    .form input{
+        margin: 10px 30 px;
+        width: 60%;
+    }
+
+
+
+
 }
