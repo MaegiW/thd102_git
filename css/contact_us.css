@@ -284,6 +284,7 @@ body{
 
 .area1{
    margin: 20px ;
+   height: auto;
 }
 
 .area1 span{
@@ -306,9 +307,8 @@ body{
     text-align: justify;
     padding: 15px;
     line-height: 1.2;
-   
     width: 90%;
-
+    height: auto;
 }
 
 .information{
@@ -401,8 +401,12 @@ body{
 
     /* 右邊 */
     .transportation{
-        width: 165%;
+        width: 162%;
         margin: 15px;
+    }
+
+    .transportation h2{
+        padding: 10px;
     }
 
     .information{
