@@ -472,7 +472,7 @@ body{
 
 /******************* RWD start *********************/
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 575px) {
 
     /* login */
 
@@ -613,9 +613,7 @@ body{
 @media (max-width: 768px){
     .news ul{
         display: flex;
-        flex-wrap: wrap;
-        
-        
+        flex-wrap: wrap;              
     }
   
     .news li{

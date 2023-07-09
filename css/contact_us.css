@@ -13,125 +13,6 @@ body{
     
 } */ 
 
-/* <!-- 最上header --> */
-
-header{
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    background-color:#1F1928 ;
-    position: relative;
-    opacity: .8;
-    position:sticky;
-    top:0;
-    z-index: 1;
-    width: 1223px;
-    margin: 0 auto;
-    
-}
-.header_left{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.logo{
-    padding-left: 60px;
-}
-
-
-.header_left nav > ul{
-    display: flex;
-    list-style: none;
-
-}
-.header_left nav > ul > li{
-    /* margin-left: 25px; */
-    padding-left: 40px;
-}
-
-.header_left nav > ul > li >a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #D9D9D9;
-    padding: 10px;
-
-}
-.header_left nav > ul > li >a:hover{
-    color: #FFA629;
-}
-
-
-
-.dropdown{
-    margin-top: 8px;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    display: none; 
-    position: absolute;
-    
-}
-.dropdown a{
-    display: block;
-    padding: 5px;
-    text-decoration: none;
-    color: #D9D9D9;
-    background-color: #1F1928;
-    text-align: center;
-    box-sizing: border-box;
-
-}
-
-.dropdown a:hover{
-    color:#FFA629
-}
-
-.showList:hover .dropdown{
-    display: block;
-}
-
-.header_right{
-    display: flex;
-    justify-content: space-between;
-}
-
-.button{
-    display: inline-block;
-    margin-right:20px ;
-    border-radius:5px;
-   
-
-}
-.button a{
-    text-decoration: none;
-    font-size: 18px;
-    color: #D9D9D9;
-    width: 100%;
-    border:1px solid #FFA629;
-    padding: 8px;
-    border-radius:5px;
-
-}
-.button a:hover{
-    color: #FFA629;
-    
-}
-
-
-.login{
-    padding-right: 60px;
-
-    
-}
-.login button{
-    background-color: #1F1928;
-    border: none;
-    cursor: pointer;
-}
 
 
 /* login */
@@ -144,13 +25,14 @@ header{
     top: 0;
     display: none;
     z-index: 3;
+
 }   
 
-.form-box1{
+.form-box{
     width: 380px;
     height: 380px;
     position: relative;
-    margin: 130px 450px;
+    margin: 6% auto;
     background-color: #353232 ;
     padding: 5px;
 }
@@ -165,7 +47,7 @@ header{
 }
 
 
-.button-box1{
+.button-box{
     width: 220px;
     margin: 35px auto;
     position: relative;
@@ -223,12 +105,12 @@ header{
     margin-top: 5px;
 }
     
-.checkbox1{
+.checkbox{
    float: left;
    display: block;
 }
 
-.box1 span{
+.box span{
     color: #D9D9D9;
     font-size: 12px;
     
@@ -254,6 +136,8 @@ header{
 .submit-btn:active{
     background-color: #1F1928;
     color:#D9D9D9;
+
+
 }
 
 .login-group a{
@@ -263,18 +147,17 @@ header{
 }
 
 
-
 .products img{
     margin-top:50px ;
     width: 100%;
 }
 
-/* <!-- 下面左右區域 --> */
+/* <!-- 下面左右區域 --> */     
 
 
 
 .container{
-    max-width:1280px ;
+    max-width:100% ;
     margin: auto;
     
    
@@ -286,7 +169,7 @@ header{
     display:flex ;
     justify-content: space-between;
     margin-top: 50px ;
-    margin-left: 85px;
+    /* margin-left: 85px; */
     
   
     
@@ -445,64 +328,35 @@ header{
 
 
 .map{
-   padding-top: 30px;
-    position: absolute;
-   
-   
-}
-
-
-/* <!-- 最下面footer --> */   
-
-footer{
-    /* background-color: #2B252F; */
-    /* width: 1280px; */
-    /* height: 250px; */
-    color: #D9D9D9;
-    padding-top: 30px;
-    margin-top: 200px;
+    margin-top: 30px;
     /* position: absolute; */
-
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+   
 }
 
-.footer-content h3{
-    font-size: 20px;
-    text-transform: capitalize;
-    line-height: 3rem;
-}
-.footer-content p{
-    font-size: 16px;
-    max-width: 500px;
-    line-height: 1.3rem;
-    margin: 10px auto;
-}
 
-.socials{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-}
-.socials li{
-    margin: 0 10px;
-}
 
-.footer-bottom{
-    /* width: 1280px; */
-    justify-content: center;
 
-}
+@media screen and (max-width: 970px) {
 
-.footer-bottom p{
-    font-size: 12px;
-    
-    
+    /* login */
+
+    .form-box {
+        width: 300px;
+        margin: 160px auto;
+
+    }
+
+    .loginbutton{
+        padding: 8px 30px ;
+
+    }
+
+    .button-box{
+        width: 200px;
+    }
+
+    .close-btn{
+        margin-top: 5px;
+    }
+
 }
