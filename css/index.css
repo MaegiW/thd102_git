@@ -483,13 +483,14 @@ body{
     }
 
     .loginbutton{
-        padding: 8px 30px ;
+        padding: 8px 23px ;
 
     }
 
     .button-box{
-        width: 200px;
+        width: 180px;
     }
+
 
     .close-btn{
         margin-top: 5px;

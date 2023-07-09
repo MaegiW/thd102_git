@@ -484,12 +484,12 @@ input[type="radio"] {
     }
 
     .loginbutton{
-        padding: 8px 30px ;
+        padding: 8px 23px ;
 
     }
 
     .button-box{
-        width: 200px;
+        width: 180px;
     }
 
     .close-btn{
@@ -613,6 +613,8 @@ input[type="radio"] {
 
 .booingbtn a{
    font-size: 16px;
+   padding: 10px 25p
+   ;
 }
    
 
