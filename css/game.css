@@ -369,85 +369,64 @@ input[type="radio"] {
   color: #D9D9D9;
   text-align: center;
   font-size: 20px;
-  padding-top: 30px;
+  padding-top: 20px;
+ line-height: 1.5;
 }
 
-.pricearea{
-    /* display: flex; */
-    /* flex-direction: column; */
-    width: 320px;
-    height: 180px;
-    margin: 30px 90px;
-}
-
-.price1{
-    float: left;
-    width: 50%;
- 
-}
-
-h2{
-    color: #D9D9D9;
-    margin-bottom: 20px;
-}
-.pricearea p{
-    color: #D9D9D9;
-    margin-bottom: 30px;
-}
-
-
-.price2{
-    width: 50%;
-    float: right;
-    
-}
-
-.custom-hr {
-    width: 75%; /* 設定寬度，可以使用百分比或像素值 */
-    margin-left: -2%; /* 設定水平偏移量，調整水平位置 */
-    margin-bottom: 25px;
-}
-  
-
-.price3{
-    width: 50%;
-    float: left;
-}
-
-.price4{
-    float: right;
-    width: 50%;
-   
- 
-}
-
-
-.price3 i{
-    float: left;
-}
-
-.price4 i{
-    float: left;
-}
-
-
-
-/* .booking-card img{
-    display: block; 
+.pricearea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 30px auto;
-} */
+  }
+  
+  
+ 
+.area1 {
+    display: flex;
+    justify-content: space-around;
+    color: #D9D9D9;
+    width: 80%;
+  }
 
-.booking-card a{
+ 
+  
+  /* 分隔線樣式 */
+  .custom-hr {
+    width: 70%;
+    margin: 20px auto;
+    
+  
+    
+  }
+  
+  /* 文字和金額的樣式 */
+  .text {
+    margin-right: 5px;
+    color: #D9D9D9;
+    padding: 10px 0;
+  }
+  
+  .money {
+    margin-right: 10px;
+    color:#D9D9D9
+  }
+
+  .area1 i{
+    margin-right: 5px;
+  }
+.booingbtn a{
     text-decoration: none;
     background-color: #FFA629;
     color: #1F1928;
     font-size: 18px;
     padding: 10px 90px;
-    margin-left: 90px;
+    margin: 0 auto;
     margin-bottom: 20px;
     border-radius: 5px;
-    
-
+    display: flex;
+    justify-content: center;
+    width: 20%;
 }
 
 
@@ -518,6 +497,10 @@ h2{
     }
 
     /* 介紹遊戲 */
+
+    .container-left{
+        margin: 0 20px;
+    }
     
     .main-wrap{
         /* margin-right: 20px; */
@@ -627,18 +610,9 @@ h2{
     margin: 45px;
    /* display: none; */
 }
-.booking-card{
-    /* margin: 20px ; */
-}
-.pricearea {
-    margin: 20px 30px;
-    padding: 0;
-    width: 100%;
-}
 
-.booking-card a{
-    padding: 12px 60px;
-    margin-left: 65px;
+.booingbtn a{
+   font-size: 16px;
 }
    
 
