@@ -174,11 +174,9 @@ header{
         top: 60px;
         right: 0;
         transform: translateX(100%);
-        /* left: 0; */
         width: 100%;
         background-color:rgba(25, 11, 25, 0.696)  ;
         transition: transform .7s;
-        /* display: initial; */
         flex-direction: column;
         overflow: hidden;
        
@@ -227,6 +225,7 @@ header{
         border:1px solid #FFA629;
         border-radius:5px;
         white-space: nowrap; 
+       
     }
 
     .button{
