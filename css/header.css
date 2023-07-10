@@ -82,7 +82,7 @@ header{
     padding: 15px 0;
     text-decoration: none;
     color: #D9D9D9;
-    background-color:rgba(25, 11, 25, 0.696)   ;
+    background-color:rgba(30, 18, 31, 0.304) ;
     text-align: center;
     box-sizing: border-box;
 
@@ -138,7 +138,7 @@ header{
 }
 
 .login button{
-    background-color:rgba(21, 9, 21, 0.696) ;
+    background-color:rgba(21, 9, 21, -0.304) ;
     border: none;
     cursor: pointer;
 }
@@ -206,13 +206,14 @@ header{
 
 
     .dropdown{
+      
         position: relative;
         width: 100%;
         /* text-align: center; */
     }
     
     #loginbutton1{
-        background-color:rgba(30, 18, 31, 0.696) ;
+        background-color:rgba(30, 18, 31, -0.304) ;
         margin-bottom: 10px;
         border: none;
         cursor: pointer;
