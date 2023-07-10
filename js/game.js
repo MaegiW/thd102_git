@@ -21,3 +21,8 @@ menu.onclick = () => {
     navbar.classList.toggle('open');
 }
 
+function OpenText(e){
+    console.log(e.closest("p"));
+    e.parentNode.closest("p");
+}
+

@@ -280,6 +280,7 @@ body{
     width: 411px;
     justify-content: space-between;
     margin:20px 55px;
+    cursor: pointer;
     
 }
 .right-wrapper p{
@@ -293,7 +294,6 @@ body{
 
 .radio1{
     border: 1px solid #FFA629;
-    /* display: block; */
     width: 115px;
     height: 60px;
     background-color: #353232;
@@ -374,8 +374,6 @@ textarea{
 
 
 .right-wrapper button{
-    /* appearance: none; */
-
     justify-content: center;
     margin-top: 20px;
     background-color: #FFA629;
