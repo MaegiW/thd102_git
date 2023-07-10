@@ -418,7 +418,10 @@ button:active{
     }
     .main-wrapper{
         display: block;
+       
     }
+
+
 
     /* 右邊 */
 
@@ -445,7 +448,7 @@ button:active{
     }
 
     .right-wrapper p{
-        margin: 30px  10px;
+        margin: 25px  10px;
     }
 
     .date{
@@ -460,11 +463,38 @@ button:active{
     }
 
     .form input{
-        margin: 10px 30 px;
-        width: 60%;
+        margin: 7px 30px;
+        width: 76%;
     }
 
+    .form span{
+        margin: 0 30px;
+        height: 30px;
 
+    }
+
+    select{
+        margin: 0 30px;
+        width: 80%;
+        height: 45px;
+        
+    }
+
+    textarea{
+        margin: 10px 30px;
+        width: 74%;
+
+    }
+
+    .twobnt{
+        display: flex;
+        flex-direction: row;
+        margin: 10px 12px;
+    }
+
+    .right-wrapper button{
+        margin: 10px 27px;
+    }
 
 
 }
