@@ -462,6 +462,10 @@ button:active{
 
     }
 
+    .radio1 {
+        width: 40%;
+    }
+
     .form input{
         margin: 7px 30px;
         width: 76%;
