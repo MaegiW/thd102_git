@@ -146,6 +146,14 @@ body{
     margin-left: 55px;
 }
 
+/* <!-- 中間區塊 --> */
+
+.containerarea{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 
 .products img{
     margin-top:50px ;
@@ -155,6 +163,8 @@ body{
 .productsM{
     display: none;
 }
+
+
 
 /* <!-- 下面左右區域 --> */     
 

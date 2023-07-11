@@ -154,7 +154,10 @@ body{
 
 /* 遊戲 */
 .products{
+    max-width: 1280px;
     margin: 0 auto;
+    width: 100%;
+
     
 }
 
@@ -163,10 +166,19 @@ body{
    
 
 }
+.breadcrumbsarea{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
 
 .breadcrumbs{
-    margin-left: 10px;
-    margin-top: 10px;
+    max-width: 1280px;
+    /* margin: 0 auto; */
+    width: 100%;
+    float: left;
+    /* margin-left: 10px;
+    margin-top: 10px; */
 }
 
 .breadcrumbs ul{
@@ -184,6 +196,12 @@ body{
 }
 
 /* 中間 */
+
+.productsarea{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
 
 .banner{
     width: 80%;
@@ -203,10 +221,6 @@ body{
 
 /* <!-- 選擇欄 --> */
 
-.list-area{
- 
-    
-}
 
 .list{
    margin-left: 475px
@@ -269,6 +283,9 @@ body{
 
  .game{
     display: grid;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
     gap: 50px;
 }

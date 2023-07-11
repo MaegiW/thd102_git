@@ -144,7 +144,9 @@ body{
 /* <!-- 上方NEWS --> */
 
 .banner-area{
-    max-width: 100%; 
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
     height: 400px;
     background-image: url(../img/NEWSBG.png);
     margin: 0 auto;
@@ -160,7 +162,14 @@ body{
     padding-top: 150px;
 }
 
+.minarea{
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .breadcrumbs ul{
+    
     display: flex ;
     column-gap: 10px;
     margin-bottom: 50px;

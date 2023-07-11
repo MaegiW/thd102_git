@@ -3,7 +3,7 @@
 let dateImg = document.getElementsByClassName("dateImg");
 let selectImg =document.getElementById("selectImg");
 let text = document.getElementById("text");
-let photo =  ["./img/Slogo.png", "./img/n1.png","./img/n2.png","./img/n3.png","./img/n4.png","./img/n5.png","./img/n6.png","./img/n7.png"]
+let photo =  ["./img/SSlogo.png", "./img/n1.png","./img/n2.png","./img/n3.png","./img/n4.png","./img/n5.png","./img/n6.png","./img/n7.png"]
 let text_area = ["NIGERU密室逃脫團工作室是將於2022年5月20日誕生,LOGO以「門」象徵自由與逃脫的機會，「人」代表熱愛密室逃脫的玩家。「Nigeru」這個日文詞彙則象徵著快逃跑和害怕的感覺。這個完美結合的LOGO代表著我們對於挑戰、合作和成功的追求，為您帶來一個神秘的逃脫冒險體驗。",
 "在荒島上的倖存者，陸續消失，只剩一人。夜晚，他聽到無數腳步聲接近，悚然回首，眼前浮現骷髏面具的人群。他驚恐奔逃，最終逃出生天。回望時，島上已空無一人，只有無數骷髏面具留在那裡。",
 "一位男子收到一個神秘的包裹，裡面是一個迷你娃娃。他開玩笑地對娃娃說話，卻驚訝地發現娃娃會回應。娃娃和他展開了一段滑稽對話，讓他忍俊不禁。從此，他與娃娃成為了最好的朋友，天天一起分享歡樂時光。",
