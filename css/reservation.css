@@ -374,8 +374,20 @@ textarea{
 
 }
 
+.twobnt button{
+    justify-content: center;
+    margin-top: 20px;
+    /* background-color: #FFA629; */
+    width: 100px;
+    height: 30px;
+    margin-left: 110px;
+    border: 1px solid #FFA629;
+    border-radius: 5px;
 
-.right-wrapper button{
+}
+
+
+/* .right-wrapper button{
     justify-content: center;
     margin-top: 20px;
     background-color: #FFA629;
@@ -385,11 +397,15 @@ textarea{
     border: 1px solid #FFA629;
     border-radius: 5px;
 
-}   
+}    */
 button:active{
     background-color: #1F1928;
     color:#D9D9D9;
 
+}
+
+.submit{
+    background-color: #FFA629;
 }
 
 

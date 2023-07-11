@@ -408,6 +408,10 @@ body{
         margin: 10px;
     }
 
+    .input-row button{
+        width: 100%;
+    }
+
 
     /* 右邊 */
     .transportation{
