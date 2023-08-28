@@ -2,16 +2,14 @@
 @import url(./header.css);
 @import url(./footer.css);
 
-*{
-    /* outline: solid 1px red; */
-}
+
 body{
-  
+
     margin: 0 auto;
     background-color: #1F1928;
     font-family:Arial, Helvetica, sans-serif;
-   
-}
+    
+    }
 
 
 /* login */
