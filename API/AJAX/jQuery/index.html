@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+	<h3>AJAX(jQuery)方式 - 連線PDO練習的Table: member</h3>
+	關鍵字: <input type="text" onkeyup="doQuery(this.value)" />
+	<p>結果: <br>
+	<span id="result"></span></p> 
+
+	<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jque
+	ry.min.js">
+	</script>
+
+	<script>
+
+		function doQuery(str){
+			//input your code...
+			if(str !== ""){
+			$.ajax({ 
+				method: "POST",
+				url: "API.php",
+				data:{
+				account:str
+				}, 
+				dataType: "json",
+				success: function (response) {
+				//更新html內容前先清空原有資料
+				$("#result").html("");
+				//更新html內容(透過jQuery跑迴圈取值)
+				$.each(response, function(index, row) {
+					$("#result").append(row.Account + "/" + row.PWD + "/" + row.CreateDate +"<br/>");
+				});
+				},
+				error: function(exception) {
+				alert("發生錯誤: " + exception.status);
+				}
+				});
+				
+			}else{
+				$("#result").text("");
+				setTimeout(function(){
+					alert("不可為空白");
+				},10);
+
+			}
+		}
+	</script>
+
+</body>
+</html>

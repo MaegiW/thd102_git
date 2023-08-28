@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+	function doQuery(str){
+
+
+		//clear all result
+		document.getElementById("result").innerHTML = "";
+
+		if(str != ""){
+			//input your code
+			xmlhttp = new XMLHttpRequest();
+
+			xmlhttp.onreadystatechange = function(){
+
+				alert( xm)
+				//判斷XMLHttpRequest是否發送成功
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200){
+				//更新html內容
+					document.getElementById("result").innerHTML = xmlhttp.responseText;
+				}
+			}
+
+			xmlhttp.open("POST", "login.php");
+			//若使用POST需額外設定RequestHeader(GET不用)
+			xmlhttp.setRequestHeader('Content-Type',
+			'application/x-www-form-urlencoded');
+			//雖透過POST傳值，仍須使用字串方式傳遞
+			xmlhttp.send("account=" + account + "&password=" + password);
+		}else{
+			alert("不可以空白唷!")
+		}
+
+		
+	}
+</script>
+</head>
+<body>
+
+<h3>AJAX(Javascript)方式 - 連線PDO練習的Table: member</h3>
+姓名關鍵字: <input type="text" name="account" onkeyup="doQuery(this.value)" />
+<p>結果: <br>
+<span id="result"></span></p> 
+
+</body>
+</html>

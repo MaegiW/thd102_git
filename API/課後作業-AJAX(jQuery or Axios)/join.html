@@ -1,0 +1,83 @@
+<html>
+<head><meta charset="utf-8"></head>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <body>
+
+
+      帳號:  
+      <input type="text" name="Account" id="Account"/>
+      <br>
+        密碼:  
+      <input type="text" name="PWD" id="PWD" />
+      <input type="button" value="送出" onclick="doSubmit();"/>
+      
+      <br><p>結果:<br>
+    <span id="result"></span>
+      </p>
+
+
+<script>
+
+
+function doSubmit(){
+    let account = document.getElementById('Account').value;
+    let pwd = document.getElementById('PWD').value;
+  
+    var fd = new FormData();
+    fd.append('Account', account);
+    fd.append('PWD', pwd );
+  
+    // POST請求
+    axios.post('join.php', fd)
+    .then(function (response) {
+        if(response.data === "正確") {
+            document.getElementById("result").innerHTML = "註冊成功";
+            // 在註冊成功後執行其他操作
+        } else {
+            alert("N");
+        }
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+}
+
+
+        function doQuery(){   
+            //將要傳送的內容封裝成FormData
+            
+            var fd = new FormData();
+                
+        //POST請求
+        axios.post('Select.php', fd)
+        .then(function (response) {
+            //更新html內容(跑迴圈解析json)
+            var msg = '';
+            response.data.forEach((row, index) => {
+              msg += row.Account + "/" + row.PWD +  "/" + row.CreateDate + "<br/>";
+            })
+            //更新html內容
+            document.getElementById("result").innerHTML = msg;
+      
+              //如果不是json就是以下這樣
+          //   document.getElementById("result").innerHTML = response.data;
+      
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+      
+              }
+      
+
+              
+          
+      </script>
+
+
+
+
+
+    </body>
+</html>
