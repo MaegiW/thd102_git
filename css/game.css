@@ -228,7 +228,7 @@ body{
 }
 
 .products p{
-    display: block;
+display: block;
    padding: 40px;
    font-size: 18px;
    color: #D9D9D9;
@@ -365,7 +365,7 @@ input[type="radio"] {
     top:130px;
     z-index: 1;
     background-color: #353232;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     border-radius: 5px;
 
 }
