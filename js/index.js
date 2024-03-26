@@ -72,23 +72,24 @@ menu.onclick = () => {
 // ----------------------------------------------------
 
 // 定義一個異步函數來獲取權杖
+
+//https://cors-anywhere.herokuapp.com/
 async function getToken() {
     try {
       const response = await fetch('https://api.instagram.com/oauth/access_token', {
         method: 'POST',
+        mode: 'no-cors', 
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          client_id: '432386265975735',
-          client_secret: '4fa70463fb1aa2c2b5245e1f2056dde8',
+          client_id: '432386265975735',//你的Instagram應用程式編號
+          client_secret: '4fa70463fb1aa2c2b5245e1f2056dde8',//你的Instagram應用程式密鑰
           grant_type: 'authorization_code',
-          redirect_uri: 'https://maegiw.github.io/thd102_git/',
+          redirect_uri: 'https://maegiw.github.io/thd102_git/',//你的重新導向URI
           code: 'AQDQSjdTSWcEsfNaCJ5ZQzKm9zpVdMfIH93_dctASyXA7A0yY3ohw82-5c1u_JRjXGJZzCVwgBR2E1SYbcMcs-BHj2Ex6z1Is6YpglqTW1zk6WRzyi6da-yOZ9gM-KY3lA2HP30rfs_Y9i7uWsQ3toBBhaF9bEcuqojF_hw_x5EMprdYiKeymL3h-frxtnEt7s4SW_Pur7j3P74OfnbHZvq7blqtKY87rrSslzHj3QC6Xw'
-        })
+        })//你的授權碼
       });
-
-    //   https://maegiw.github.io/thd102_git/?code=AQDQSjdTSWcEsfNaCJ5ZQzKm9zpVdMfIH93_dctASyXA7A0yY3ohw82-5c1u_JRjXGJZzCVwgBR2E1SYbcMcs-BHj2Ex6z1Is6YpglqTW1zk6WRzyi6da-yOZ9gM-KY3lA2HP30rfs_Y9i7uWsQ3toBBhaF9bEcuqojF_hw_x5EMprdYiKeymL3h-frxtnEt7s4SW_Pur7j3P74OfnbHZvq7blqtKY87rrSslzHj3QC6Xw#_
   
       if (!response.ok) {
         throw new Error('獲取權杖失敗');
@@ -112,3 +113,6 @@ async function getToken() {
       console.error('獲取權杖失敗:', error);
     }
   });
+
+  
+    //   https://maegiw.github.io/thd102_git/?code=AQDQSjdTSWcEsfNaCJ5ZQzKm9zpVdMfIH93_dctASyXA7A0yY3ohw82-5c1u_JRjXGJZzCVwgBR2E1SYbcMcs-BHj2Ex6z1Is6YpglqTW1zk6WRzyi6da-yOZ9gM-KY3lA2HP30rfs_Y9i7uWsQ3toBBhaF9bEcuqojF_hw_x5EMprdYiKeymL3h-frxtnEt7s4SW_Pur7j3P74OfnbHZvq7blqtKY87rrSslzHj3QC6Xw#_
