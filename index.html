@@ -1,301 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nigeru-首頁</title>
-    <link rel="shortcut icon" href="./img/SL.png">
-    <link rel="bookmark" href="./img/SL.png">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-</head>
+    <link rel="shortcut icon" href="./img/SL.png" />
+    <link rel="bookmark" href="./img/SL.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- 最上header -->
     <header>
-        <div class="header_left">
-            <div class="logo">
-                <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
-            </div>
-            <nav>
-                <ul class="navbar">
-                    <li class="nav-item"><a href="./about_us.html">關於NIGERU</a></li>
-                    <li class="nav-item"><a href="./news.html">最新消息</a></li>
-                    <li class="showList">
-                        <a href="./products.html">密室主題 <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown">
-                            <li><a href="./game.html">倖存者</a></li>
-                            <li><a href="./game.html">娃娃</a></li>
-                            <li><a href="./game.html">嚇水道</a></li>
-                            <li><a href="./game.html">傘</a></li>
-                            <li><a href="./game.html">三号室</a></li>
-                            <li><a href="./game.html">緯育高校女子</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a href="./contact_us.html">聯絡我們</a></li>
-                    <li class="nav-item -mobile-show"><a href="./reservation.html">線上預約</a></li>
-                    <li class="nav-item -mobile-show"><button type="button" id="loginbutton1"><i class="fa-solid fa-user" style="color: #ffa629;"></i></button></li>
-                </ul>
-            </nav>
-
-
+      <div class="header_left">
+        <div class="logo">
+          <a href="./index.html"><img src="./img/LOGO.png" alt="" /></a>
         </div>
-        <div class="header_right">
-            <div class="button">
-                <a href="./reservation.html">線上預約</a>
-            </div>
-            <div class="login">
-                <button type="button" id="loginbutton2"><i class="fa-solid fa-user"
-                        style="color: #ffa629;"></i></button>
-            </div>
-            <div class="bx bx-menu" id="menu-icon"></div>
+        <nav>
+          <ul class="navbar">
+            <li class="nav-item"><a href="./about_us.html">關於NIGERU</a></li>
+            <li class="nav-item"><a href="./news.html">最新消息</a></li>
+            <li class="showList">
+              <a href="./products.html"
+                >密室主題 <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown">
+                <li><a href="./game.html">倖存者</a></li>
+                <li><a href="./game.html">娃娃</a></li>
+                <li><a href="./game.html">嚇水道</a></li>
+                <li><a href="./game.html">傘</a></li>
+                <li><a href="./game.html">三号室</a></li>
+                <li><a href="./game.html">緯育高校女子</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="./contact_us.html">聯絡我們</a></li>
+            <li class="nav-item -mobile-show">
+              <a href="./reservation.html">線上預約</a>
+            </li>
+            <li class="nav-item -mobile-show">
+              <button type="button" id="loginbutton1">
+                <i class="fa-solid fa-user" style="color: #ffa629"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header_right">
+        <div class="button">
+          <a href="./reservation.html">線上預約</a>
         </div>
-
+        <div class="login">
+          <button type="button" id="loginbutton2">
+            <i class="fa-solid fa-user" style="color: #ffa629"></i>
+          </button>
+        </div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
     </header>
 
     <!-- /* login */ -->
     <div class="poppup" id="popup_1">
-
-        <div class="form-box">
-            <div class="close-btn">&times;</div>
-            <div class="button-box">
-                <div id="btn"> </div>
-                <button class="loginbutton">登入</button>
-                <button class="loginbutton">註冊</button>
-            </div>
-
-            <div class="login-group">
-                <div class="input-box">
-                    <span class="details">使用者名稱 或 電子郵件*</span>
-                    <input type="text" required>
-                </div>
-
-                <div class="input-box">
-                    <span class="details">密碼</span>
-                    <input type="text" required>
-                </div>
-
-                <div class="box">
-                    <input type="checkbox" class="checkbox"><span>保持登入</span>
-                </div>
-
-                <div class="button-login">
-                    <button type="submit" class="submit-btn">登入</button>
-                </div>
-
-                <a href="#">忘記您的密碼?</a>
-            </div>
-
+      <div class="form-box">
+        <div class="close-btn">&times;</div>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button class="loginbutton">登入</button>
+          <button class="loginbutton">註冊</button>
         </div>
 
+        <div class="login-group">
+          <div class="input-box">
+            <span class="details">使用者名稱 或 電子郵件*</span>
+            <input type="text" required />
+          </div>
+
+          <div class="input-box">
+            <span class="details">密碼</span>
+            <input type="text" required />
+          </div>
+
+          <div class="box">
+            <input type="checkbox" class="checkbox" /><span>保持登入</span>
+          </div>
+
+          <div class="button-login">
+            <button type="submit" class="submit-btn">登入</button>
+          </div>
+
+          <a href="#">忘記您的密碼?</a>
+        </div>
+      </div>
     </div>
-
-
 
     <!-- 主畫面 -->
     <div class="top">
-        <div class="top-center">
-            <!-- 右邊 -->
-            <img src="./img/topimg.png" alt="">
-            <!-- 左邊 -->
-            <div class="top-center_text">
-                <h1 class="animate__animated animate__heartBeat animate__repeat-3	3">CAN YOU <br>NIGERU?</h1>
-                <p>準備好開始冒險了嗎?<br>讓我們展開新的冒險吧!</p>
-                <a class="animate__animated animate__backOutRight animate__infinite	infinite"
-                    href="./products.html">LET’S GO<i class="fa-solid fa-person-running"
-                        style="color: #ffa629;" ></i> <i class='bx bxs-door-open' ></i></a>
-            </div>
+      <div class="top-center">
+        <!-- 右邊 -->
+        <img src="./img/topimg.png" alt="" />
+        <!-- 左邊 -->
+        <div class="top-center_text">
+          <h1 class="animate__animated animate__heartBeat animate__repeat-3 3">
+            CAN YOU <br />NIGERU?
+          </h1>
+          <p>準備好開始冒險了嗎?<br />讓我們展開新的冒險吧!</p>
+          <a
+            class="animate__animated animate__backOutRight animate__infinite infinite"
+            href="./products.html"
+            >LET’S GO<i
+              class="fa-solid fa-person-running"
+              style="color: #ffa629"
+            ></i>
+            <i class="bx bxs-door-open"></i
+          ></a>
         </div>
+        <button id="btnTrn">權杖操作</button>
+      </div>
     </div>
     <!-- 最新消息 -->
 
     <div class="news">
-        <h1>最新消息</h1>
-        <ul>
-            <li class="news1" div data-aos="zoom-in-down">
-                <img src="./img/summer1.png" alt="">
-                <h3>2023/6/20</h3>
-                <p>暑假夏最涼活動學生優惠再度來襲!</p>
-                <a href="./news.html">了解更多</a>
-            </li>
+      <h1>最新消息</h1>
+      <ul>
+        <li class="news1" div data-aos="zoom-in-down">
+          <img src="./img/summer1.png" alt="" />
+          <h3>2023/6/20</h3>
+          <p>暑假夏最涼活動學生優惠再度來襲!</p>
+          <a href="./news.html">了解更多</a>
+        </li>
 
-            <li class="news2" div data-aos="zoom-in-up">
-                <img src="./img/HBD6.png" alt="">
-                <h3>2023/6/01</h3>
-                <p> 六月壽星有好康!!</p>
-                <a href="./news.html">了解更多</a>
-            </li>
+        <li class="news2" div data-aos="zoom-in-up">
+          <img src="./img/HBD6.png" alt="" />
+          <h3>2023/6/01</h3>
+          <p>六月壽星有好康!!</p>
+          <a href="./news.html">了解更多</a>
+        </li>
 
-            <li class="news3" div data-aos="zoom-in-down">
-                <img src="./img/newG1.png" alt="">
-                <h3>2023/2/20</h3>
-                <p>全新恐怖密室登場！緯育女子高校!快來預約!</p>
-                <a href="./news.html">了解更多</a>
-            </li>
-        </ul>
-
+        <li class="news3" div data-aos="zoom-in-down">
+          <img src="./img/newG1.png" alt="" />
+          <h3>2023/2/20</h3>
+          <p>全新恐怖密室登場！緯育女子高校!快來預約!</p>
+          <a href="./news.html">了解更多</a>
+        </li>
+      </ul>
     </div>
-
 
     <!-- 遊戲流程 -->
 
     <div class="wrap">
-        <h1>密室逃脫流程</h1>
+      <h1>密室逃脫流程</h1>
 
-        <!-- item 1 -->
-        <div class="item" >
-            <div class="pic" div data-aos="fade-up">
-                <img src="./img/G1.png" alt="">
-            </div>
-            <div class="text" div data-aos="fade-down">
-                <h3>01</h3>
-                <h2>【 講解遊戲規則及故事內容 】</h2>
-                <p>玩密室逃脫遊戲合作解謎，找線索逃脫。時間有限，注意溝通，思考迅速。順利逃出密室！</p>
-            </div>
+      <!-- item 1 -->
+      <div class="item">
+        <div class="pic" div data-aos="fade-up">
+          <img src="./img/G1.png" alt="" />
         </div>
-
-        <!-- item 2 -->
-        <div class="item">
-            <div class="text" div data-aos="fade-up">
-                <h3>02</h3>
-                <h2>【 時間內逃出密室 】</h2>
-                <p>密室逃脫是一款在有限時間逃出或者完成任務的遊戲，過程中你們將會遇到各式各樣的難題，考驗任何專業知識。需要不斷地與隊友溝通找到線索，就可以順利逃脫逃脫。</p>
-            </div>
-            <div class="pic"div data-aos="fade-down">
-                <img src="./img/G2.png" alt="">
-            </div>
+        <div class="text" div data-aos="fade-down">
+          <h3>01</h3>
+          <h2>【 講解遊戲規則及故事內容 】</h2>
+          <p>
+            玩密室逃脫遊戲合作解謎，找線索逃脫。時間有限，注意溝通，思考迅速。順利逃出密室！
+          </p>
         </div>
+      </div>
 
-        <!-- item 3 -->
-        <div class="item">
-            <div class="pic" div data-aos="fade-up">
-                <img src="./img/G3.png" alt="">
-            </div>
-            <div class="text" div data-aos="fade-down">
-                <h3>03</h3>
-                <h2>【 遊戲後講解 】</h2>
-                <p>我們會有小天使陪伴玩家一整場遊戲。為了讓玩家在體驗整場遊戲後，能夠非常清楚整個個遊戲的流程，也無須擔心解不完怎麼辦。小天使將會為您講解所有過程，不會讓您帶著疑惑離開。</p>
-            </div>
+      <!-- item 2 -->
+      <div class="item">
+        <div class="text" div data-aos="fade-up">
+          <h3>02</h3>
+          <h2>【 時間內逃出密室 】</h2>
+          <p>
+            密室逃脫是一款在有限時間逃出或者完成任務的遊戲，過程中你們將會遇到各式各樣的難題，考驗任何專業知識。需要不斷地與隊友溝通找到線索，就可以順利逃脫逃脫。
+          </p>
         </div>
-
-        <!-- item 4-->
-        <div class="item">
-            <div class="text" div data-aos="fade-up">
-                <h3>04</h3>
-                <h2>【 周邊小禮物 】</h2>
-                <p>為了讓玩家體驗遊戲後還能有個紀念品，專屬打造每個主題的周邊商品。</p>
-            </div>
-            <div class="pic" div data-aos="fade-down">
-                <img src="./img/G4.png" alt="">
-            </div>
+        <div class="pic" div data-aos="fade-down">
+          <img src="./img/G2.png" alt="" />
         </div>
+      </div>
 
-
-        <!-- item 5-->
-        <div class="item">
-            <div class="pic" div data-aos="fade-up">
-                <img src="./img/G5.png" alt="">
-            </div>
-            <div class="text" div data-aos="fade-down">
-                <h3>05</h3>
-                <h2>【 拍照留念 】</h2>
-                <p>當密室逃脫遊戲結束後，團隊通常會在密室內拍照留念。這些照片不僅是珍貴的回憶，也是證明自己在挑戰中取得勝利的見證。</p>
-            </div>
+      <!-- item 3 -->
+      <div class="item">
+        <div class="pic" div data-aos="fade-up">
+          <img src="./img/G3.png" alt="" />
         </div>
+        <div class="text" div data-aos="fade-down">
+          <h3>03</h3>
+          <h2>【 遊戲後講解 】</h2>
+          <p>
+            我們會有小天使陪伴玩家一整場遊戲。為了讓玩家在體驗整場遊戲後，能夠非常清楚整個個遊戲的流程，也無須擔心解不完怎麼辦。小天使將會為您講解所有過程，不會讓您帶著疑惑離開。
+          </p>
+        </div>
+      </div>
+
+      <!-- item 4-->
+      <div class="item">
+        <div class="text" div data-aos="fade-up">
+          <h3>04</h3>
+          <h2>【 周邊小禮物 】</h2>
+          <p>
+            為了讓玩家體驗遊戲後還能有個紀念品，專屬打造每個主題的周邊商品。
+          </p>
+        </div>
+        <div class="pic" div data-aos="fade-down">
+          <img src="./img/G4.png" alt="" />
+        </div>
+      </div>
+
+      <!-- item 5-->
+      <div class="item">
+        <div class="pic" div data-aos="fade-up">
+          <img src="./img/G5.png" alt="" />
+        </div>
+        <div class="text" div data-aos="fade-down">
+          <h3>05</h3>
+          <h2>【 拍照留念 】</h2>
+          <p>
+            當密室逃脫遊戲結束後，團隊通常會在密室內拍照留念。這些照片不僅是珍貴的回憶，也是證明自己在挑戰中取得勝利的見證。
+          </p>
+        </div>
+      </div>
     </div>
 
     <!-- 熱門推薦 -->
     <div class="bottom">
-        <h1>熱門推薦</h1>
-        <div class="wrapper">
-            <i id="left" class="fa-solid fa-chevron-left" style="color: #ffa629;"></i>
-            <div class="carousel">
-                <a href="./game.html"><img src="./img/b1.png"></a>
-                <a href="./game.html"><img src="./img/b2.png"></a>
-                <a href="./game.html"><img src="./img/b5.png"></a>
-                <a href="./game.html"><img src="./img/b4.png"></a>
-                <a href="./game.html"><img src="./img/b3.png"></a>
-                <a href="./game.html"><img src="./img/b1.png"></a>
-                <a href="./game.html"><img src="./img/b2.png"></a>
-                <a href="./game.html"><img src="./img/b5.png"></a>
-                <a href="./game.html"><img src="./img/b4.png"></a>
-                <a href="./game.html"><img src="./img/b3.png"></a>
-            </div>
-            <i id="right" class="fa-solid fa-chevron-right" style="color: #ffa629;"></i>
+      <h1>熱門推薦</h1>
+      <div class="wrapper">
+        <i
+          id="left"
+          class="fa-solid fa-chevron-left"
+          style="color: #ffa629"
+        ></i>
+        <div class="carousel">
+          <a href="./game.html"><img src="./img/b1.png" /></a>
+          <a href="./game.html"><img src="./img/b2.png" /></a>
+          <a href="./game.html"><img src="./img/b5.png" /></a>
+          <a href="./game.html"><img src="./img/b4.png" /></a>
+          <a href="./game.html"><img src="./img/b3.png" /></a>
+          <a href="./game.html"><img src="./img/b1.png" /></a>
+          <a href="./game.html"><img src="./img/b2.png" /></a>
+          <a href="./game.html"><img src="./img/b5.png" /></a>
+          <a href="./game.html"><img src="./img/b4.png" /></a>
+          <a href="./game.html"><img src="./img/b3.png" /></a>
         </div>
-
+        <i
+          id="right"
+          class="fa-solid fa-chevron-right"
+          style="color: #ffa629"
+        ></i>
+      </div>
     </div>
 
     <!-- 最下面footer -->
 
     <footer>
-        <div class="footer-content">
-            <h3>NIGERU工作室密室逃脫</h3>
-            <p>台北市中山區南京東路三段219號5樓<br>
-                nigeru_run@gmail.com<br>
-                02-176X1X68</p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"
-                            style="color: #ffa629;"></i>
-                    </a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"
-                            style="color: #ffa629;"></i>
-                    </a></li>
-                <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter" style="color: #ffa629;"></i>
-                    </a></li>
-                <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: #ffa629;"></i>
-                    </a></li>
-            </ul>
-            <div class="footer-bottom">
-                <p>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。<br>參考資源: Loop迴圈密室逃脫, 神不在場, enterspace</p>
-            </div>
-
+      <div class="footer-content">
+        <h3>NIGERU工作室密室逃脫</h3>
+        <p>
+          台北市中山區南京東路三段219號5樓<br />
+          nigeru_run@gmail.com<br />
+          02-176X1X68
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i
+                class="fa-brands fa-square-facebook"
+                style="color: #ffa629"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i
+                class="fa-brands fa-square-instagram"
+                style="color: #ffa629"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter" style="color: #ffa629"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"
+              ><i class="fa-brands fa-youtube" style="color: #ffa629"></i>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-bottom">
+          <p>
+            本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。<br />參考資源:
+            Loop迴圈密室逃脫, 神不在場, enterspace
+          </p>
         </div>
+      </div>
     </footer>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.js"></script>
 
     <script>
-        AOS.init({
-            // once: Infinity,
-            // easing: 'ease-out-back',
-            offset: 50,
-            duration: 1000
-        });//END
+      AOS.init({
+        // once: Infinity,
+        // easing: 'ease-out-back',
+        offset: 50,
+        duration: 1000,
+      }); //END
 
-        $(function () {
-            let width = $(window).width();
-            console.log(width);
-            if (width > 970) {
-                // AOS.init({
-                //     // once: Infinity,
-                //     // easing: 'ease-out-back',
-                //     offset: 50,
-                //     duration: 1000
-                // });//END
-            }
-
-
-
-        })
-
-
+      $(function () {
+        let width = $(window).width();
+        console.log(width);
+        if (width > 970) {
+          // AOS.init({
+          //     // once: Infinity,
+          //     // easing: 'ease-out-back',
+          //     offset: 50,
+          //     duration: 1000
+          // });//END
+        }
+      });
     </script>
-
-
-
-</body>
-
+  </body>
 </html>

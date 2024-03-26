@@ -69,4 +69,56 @@ menu.onclick = () => {
 }
 
 
+// ----------------------------------------------------
 
+// 定義一個異步函數來獲取權杖
+
+const clientId = process.env.CLIENT_ID;
+const clientSecret = process.env.CLIENT_SECRET;
+const redirectUri = process.env.REDIRECT_URI;
+const code = process.env.CODE;
+
+//https://cors-anywhere.herokuapp.com/
+async function getToken() {
+    try {
+      const response = await fetch('https://api.instagram.com/oauth/access_token', {
+        method: 'POST',
+        // mode: 'no-cors', //在這裡加入 'no-cors'
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          client_id: clientId,//Instagram應用程式編號
+          client_secret: clientSecret,//Instagram應用程式密鑰
+          grant_type: 'authorization_code',
+          redirect_uri: redirectUri,//重新導向URI
+          code: code
+        })//授權碼
+      });
+    
+      //丟出錯誤
+      if (!response.ok) {
+        throw new Error('獲取權杖失敗');
+      }
+  
+      const data = await response.json();
+      return data.access_token; // 返回獲取的權杖
+    } catch (error) {
+      console.error('發生錯誤：', error);
+      throw error;
+    }
+  }
+  
+  // 當按鈕被點擊時觸發獲取權杖操作
+  document.getElementById('btnTrn').addEventListener('click', async () => {
+    try {
+      const token = await getToken();
+      console.log('成功獲取權杖:', token);
+      // 在此處可以使用獲取到的權杖來執行其他操作，比如通過 Meta API 獲取數據
+    } catch (error) {
+      console.error('獲取權杖失敗:', error);
+    }
+  });
+
+  
+    //   https://maegiw.github.io/thd102_git/?code=AQDQSjdTSWcEsfNaCJ5ZQzKm9zpVdMfIH93_dctASyXA7A0yY3ohw82-5c1u_JRjXGJZzCVwgBR2E1SYbcMcs-BHj2Ex6z1Is6YpglqTW1zk6WRzyi6da-yOZ9gM-KY3lA2HP30rfs_Y9i7uWsQ3toBBhaF9bEcuqojF_hw_x5EMprdYiKeymL3h-frxtnEt7s4SW_Pur7j3P74OfnbHZvq7blqtKY87rrSslzHj3QC6Xw#_
