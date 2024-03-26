@@ -74,7 +74,7 @@ menu.onclick = () => {
 // 定義一個異步函數來獲取權杖
 async function getToken() {
     try {
-      const response = await fetch('https://api.instagram.com/oauth/authorize', {
+      const response = await fetch('https://api.instagram.com/oauth/access_token', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
