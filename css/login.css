@@ -162,7 +162,7 @@
     cursor: pointer;
     background: transparent;
     border: 0;
-    outline:none;
+    /* outline:none; */
     position: relative;
     color:#D9D9D9;
    font-size: 18px;

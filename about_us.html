@@ -1,214 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nigeru-關於我們</title>
-    <link rel="shortcut icon" href="./img/SL.png">
-    <link rel="bookmark" href="./img/SL.png">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/about_us.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  
-</head>
-<body>
- 
- <!-- 最上header -->
- <header>
-    <div class="header_left">
+    <link rel="shortcut icon" href="./img/SL.png" />
+    <link rel="bookmark" href="./img/SL.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/about_us.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <!-- 最上header -->
+    <header>
+      <div class="header_left">
         <div class="logo">
-            <a href="./index.html"><img src="./img/LOGO.png" alt=""></a>
+          <a href="./index.html"><img src="./img/LOGO.png" alt="" /></a>
         </div>
         <nav>
-            <ul class="navbar">
-                <li class="nav-item"><a href="./about_us.html">關於NIGERU</a></li>
-                <li class="nav-item"><a href="./news.html">最新消息</a></li>
-                <li class="showList">
-                    <a href="./products.html">密室主題 <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown">
-                        <li><a href="./game.html">倖存者</a></li>
-                        <li><a href="./game.html">娃娃</a></li>
-                        <li><a href="./game.html">嚇水道</a></li>
-                        <li><a href="./game.html">傘</a></li>
-                        <li><a href="./game.html">三号室</a></li>
-                        <li><a href="./game.html">緯育高校女子</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a href="./contact_us.html">聯絡我們</a></li>
-                
-                <li class="nav-item -mobile-show"><a href="./reservation.html">線上預約</a></li>
-                <li class="nav-item -mobile-show"><button type="button" id="loginbutton1"><i class="fa-solid fa-user" style="color: #ffa629;"></i></button></li>
-            </ul>
+          <ul class="navbar">
+            <li class="nav-item"><a href="./about_us.html">關於NIGERU</a></li>
+            <li class="nav-item"><a href="./news.html">最新消息</a></li>
+
+            <li class="showList">
+              <a href="./products.html"
+                >密室主題 <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown">
+                <li><a href="./game.html">倖存者</a></li>
+                <li><a href="./game.html">娃娃</a></li>
+                <li><a href="./game.html">嚇水道</a></li>
+                <li><a href="./game.html">傘</a></li>
+                <li><a href="./game.html">三号室</a></li>
+                <li><a href="./game.html">緯育高校女子</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a href="./contact_us.html">聯絡我們</a></li>
+
+            <li class="nav-item -mobile-show">
+              <a href="./reservation.html">線上預約</a>
+            </li>
+            <li class="nav-item -mobile-show">
+              <button type="button" id="loginbutton1">
+                <i class="fa-solid fa-user" style="color: #ffa629"></i>
+              </button>
+            </li>
+          </ul>
         </nav>
-
-
-    </div>
-    <div class="header_right">
+      </div>
+      <div class="header_right">
         <div class="button">
-            <a href="./reservation.html">線上預約</a>
+          <a href="./reservation.html">線上預約</a>
         </div>
         <div class="login">
-            <button type="button" id="loginbutton2"><i class="fa-solid fa-user"
-                    style="color: #ffa629;"></i></button>
+          <button type="button" id="loginbutton2">
+            <i class="fa-solid fa-user" style="color: #ffa629"></i>
+          </button>
         </div>
         <div class="bx bx-menu" id="menu-icon"></div>
-    </div>
+      </div>
+    </header>
 
-</header>
-
-<!-- /* login */ -->
-<div class="poppup" id="popup_1">
-
-    <div class="form-box">
+    <!-- /* login */ -->
+    <div class="poppup" id="popup_1">
+      <div class="form-box">
         <div class="close-btn">&times;</div>
         <div class="button-box">
-            <div id="btn"> </div>
-            <button class="loginbutton">登入</button>
-            <button class="loginbutton">註冊</button>
+          <div id="btn"></div>
+          <button class="loginbutton">登入</button>
+          <button class="loginbutton">註冊</button>
         </div>
 
         <div class="login-group">
-            <div class="input-box">
-                <span class="details">使用者名稱 或 電子郵件*</span>
-                <input type="text" required>
-            </div>
+          <div class="input-box">
+            <span class="details">使用者名稱 或 電子郵件*</span>
+            <input type="text" required />
+          </div>
 
-            <div class="input-box">
-                <span class="details">密碼</span>
-                <input type="text" required>
-            </div>
+          <div class="input-box">
+            <span class="details">密碼</span>
+            <input type="text" required />
+          </div>
 
-            <div class="box">
-                <input type="checkbox" class="checkbox"><span>保持登入</span>
-            </div>
+          <div class="box">
+            <input type="checkbox" class="checkbox" /><span>保持登入</span>
+          </div>
 
-            <div class="button-login">
-                <button type="submit" class="submit-btn">登入</button>
-            </div>
+          <div class="button-login">
+            <button type="submit" class="submit-btn">登入</button>
+          </div>
 
-            <a href="#">忘記您的密碼?</a>
+          <a href="#">忘記您的密碼?</a>
         </div>
-
+      </div>
     </div>
 
-</div>
-
-
- 
     <!-- main -->
     <div class="container">
-        <div class="main">
-            <div class="main-text">
-                <h1>ABOUT US</h1>
-                <p>歡迎來到NIGERU密室逃脫團工作室！我們將於2022年5月20日盛大開幕，為您帶來一場難忘的逃脫體驗。<br>
-                    <br>
-                    我們的團隊將為您提供真實的設計和精心製作的場景，讓您感受到真實的氛圍和令人著迷的劇情。每個密室都有獨特的主題和挑戰，讓您與團隊一同經歷驚喜和成就感。<br>
-                    <br>
-                    無論您是與家人、朋友還是同事一同參與，密室逃脫團隊將成為您們一起建立回憶的場所，並共同創造出令人難忘的逃脫冒險！準備好了嗎？讓我們開始吧！</p>
-            </div>
+      <div class="main">
+        <div class="main-text">
+          <h1>ABOUT US</h1>
+          <p>
+            歡迎來到NIGERU密室逃脫團工作室！我們將於2022年5月20日盛大開幕，為您帶來一場難忘的逃脫體驗。<br />
+            <br />
+            我們的團隊將為您提供真實的設計和精心製作的場景，讓您感受到真實的氛圍和令人著迷的劇情。每個密室都有獨特的主題和挑戰，讓您與團隊一同經歷驚喜和成就感。<br />
+            <br />
+            無論您是與家人、朋友還是同事一同參與，密室逃脫團隊將成為您們一起建立回憶的場所，並共同創造出令人難忘的逃脫冒險！準備好了嗎？讓我們開始吧！
+          </p>
         </div>
+      </div>
     </div>
-
 
     <!-- 團隊歷史 -->
     <div class="wrapper">
-        <div class="border">
-            <div class="text">
-                <h1>團隊歷史</h1>
-            </div>
-            <ul class="timeline">
-                <li data-year="2022/05" data-text="誕生" class="dateImg"></li>
-                <li data-year="05/31" data-text="倖存者" class="dateImg"></li>
-                <li data-year="06/20" data-text="娃娃" class="dateImg"></li>
-                <li data-year="07/01" data-text="增加桌遊活動" class="dateImg"></li>
-                <li data-year="08/20" data-text="嚇水道" class="dateImg"></li>
-                <li data-year="10/20" data-text="傘" class="dateImg"></li>
-                <li data-year="2023/02" data-text="三号室" class="dateImg"></li>
-                <li data-year="05/20" data-text="緯育高校女子" class="dateImg"></li>
-            </ul> 
-
-            <ul class="timelineM">
-                <li data-year="2022/05" data-text="誕生" class="dateImg">
-                  <div class="circle"></div>
-                  <p class="title">誕生</p>
-                  <p class="year">2022/05</p>
-                </li>
-                <li data-year="05/31" data-text="倖存者" class="dateImg">
-                  <div class="circle"></div>
-                  <p class="title">倖存者</p>
-                  <p class="year">2022/05/31</p>
-                </li>
-                <li data-year="06/20" data-text="娃娃" class="dateImg">
-                  <div class="circle"></div>
-                  <p class="title">娃娃</p>
-                  <p class="year">2022/06/20</p>
-                </li>
-                <li data-year="07/01" data-text="增加桌遊活動" class="dateImg">
-                    <div class="circle"></div>
-                  <p class="title">桌遊活動</p>
-                  <p class="year">2022/07/1</p>
-                </li>
-                <li data-year="08/20" data-text="嚇水道" class="dateImg">
-                    <div class="circle"></div>
-                  <p class="title">嚇水道</p>
-                  <p class="year">2022/08/20</p>
-                </li>
-                <li data-year="10/20" data-text="傘" class="dateImg">
-                    <div class="circle"></div>
-                  <p class="title">傘</p>
-                  <p class="year">2022/10/20</p>
-                </li>
-                <li data-year="2023/02" data-text="三号室" class="dateImg">
-                    <div class="circle"></div>
-                  <p class="title">三号室</p>
-                  <p class="year">2023/02</p>
-                </li>
-                <li data-year="05/20" data-text="緯育高校女子" class="dateImg">
-                    <div class="circle"></div>
-                    <p class="title">緯育高校女子</p>
-                    <p class="year">2023/05/20</p>
-                </li>
-                  
-            </ul> 
-            
-            <div class="box2">
-                <img src="./img/SSlogo.png" alt="" id="selectImg">
-                <p id="text">NIGERU密室逃脫團工作室是將於2022年5月20日誕生,LOGO以「門」象徵自由與逃脫的機會，「人」代表熱愛密室逃脫的玩家。「Nigeru」這個日文詞彙則象徵著快逃跑和害怕的感覺。這個完美結合的LOGO代表著我們對於挑戰、合作和成功的追求，為您帶來一個神秘的逃脫冒險體驗。</p>
-            </div>
-
+      <div class="border">
+        <div class="text">
+          <h1>團隊歷史</h1>
         </div>
+        <ul class="timeline">
+          <li data-year="2022/05" data-text="誕生" class="dateImg"></li>
+          <li data-year="05/31" data-text="倖存者" class="dateImg"></li>
+          <li data-year="06/20" data-text="娃娃" class="dateImg"></li>
+          <li data-year="07/01" data-text="增加桌遊活動" class="dateImg"></li>
+          <li data-year="08/20" data-text="嚇水道" class="dateImg"></li>
+          <li data-year="10/20" data-text="傘" class="dateImg"></li>
+          <li data-year="2023/02" data-text="三号室" class="dateImg"></li>
+          <li data-year="05/20" data-text="緯育高校女子" class="dateImg"></li>
+        </ul>
+
+        <ul class="timelineM">
+          <li data-year="2022/05" data-text="誕生" class="dateImg">
+            <div class="circle"></div>
+            <p class="title">誕生</p>
+            <p class="year">2022/05</p>
+          </li>
+          <li data-year="05/31" data-text="倖存者" class="dateImg">
+            <div class="circle"></div>
+            <p class="title">倖存者</p>
+            <p class="year">2022/05/31</p>
+          </li>
+          <li data-year="06/20" data-text="娃娃" class="dateImg">
+            <div class="circle"></div>
+            <p class="title">娃娃</p>
+            <p class="year">2022/06/20</p>
+          </li>
+          <li data-year="07/01" data-text="增加桌遊活動" class="dateImg">
+            <div class="circle"></div>
+            <p class="title">桌遊活動</p>
+            <p class="year">2022/07/1</p>
+          </li>
+          <li data-year="08/20" data-text="嚇水道" class="dateImg">
+            <div class="circle"></div>
+            <p class="title">嚇水道</p>
+            <p class="year">2022/08/20</p>
+          </li>
+          <li data-year="10/20" data-text="傘" class="dateImg">
+            <div class="circle"></div>
+            <p class="title">傘</p>
+            <p class="year">2022/10/20</p>
+          </li>
+          <li data-year="2023/02" data-text="三号室" class="dateImg">
+            <div class="circle"></div>
+            <p class="title">三号室</p>
+            <p class="year">2023/02</p>
+          </li>
+          <li data-year="05/20" data-text="緯育高校女子" class="dateImg">
+            <div class="circle"></div>
+            <p class="title">緯育高校女子</p>
+            <p class="year">2023/05/20</p>
+          </li>
+        </ul>
+
+        <div class="box2">
+          <img src="./img/SSlogo.png" alt="" id="selectImg" />
+          <p id="text">
+            NIGERU密室逃脫團工作室是將於2022年5月20日誕生,LOGO以「門」象徵自由與逃脫的機會，「人」代表熱愛密室逃脫的玩家。「Nigeru」這個日文詞彙則象徵著快逃跑和害怕的感覺。這個完美結合的LOGO代表著我們對於挑戰、合作和成功的追求，為您帶來一個神秘的逃脫冒險體驗。
+          </p>
+        </div>
+      </div>
     </div>
-     <!-- 最下面footer -->
+    <!-- 最下面footer -->
 
-     <footer>
-        <div class="footer-content">
-            <h3>NIGERU工作室密室逃脫</h3>
-            <p>台北市中山區南京東路三段219號5樓<br>
-                nigeru_run@gmail.com<br>
-                02-176X1X68</p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" style="color: #ffa629;"></i>
-                </a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram" style="color: #ffa629;"></i>
-                </a></li>
-                <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter" style="color: #ffa629;"></i>
-                </a></li>
-                <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: #ffa629;"></i>
-                </a></li>
-            </ul>
-            
-            <div class="footer-bottom">
-                <p>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。<br>參考資源:  Loop迴圈密室逃脫, 神不在場, enterspace</p>
-            </div>
+    <footer>
+      <div class="footer-content">
+        <h3>NIGERU工作室密室逃脫</h3>
+        <p>
+          台北市中山區南京東路三段219號5樓<br />
+          nigeru_run@gmail.com<br />
+          02-176X1X68
+        </p>
+        <ul class="socials">
+          <li>
+            <a href="https://www.facebook.com/"
+              ><i
+                class="fa-brands fa-square-facebook"
+                style="color: #ffa629"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"
+              ><i
+                class="fa-brands fa-square-instagram"
+                style="color: #ffa629"
+              ></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter" style="color: #ffa629"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/"
+              ><i class="fa-brands fa-youtube" style="color: #ffa629"></i>
+            </a>
+          </li>
+        </ul>
 
+        <div class="footer-bottom">
+          <p>
+            本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。<br />參考資源:
+            Loop迴圈密室逃脫, 神不在場, enterspace
+          </p>
         </div>
+      </div>
     </footer>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./js/about_us.js"></script>
-
-</body>
+  </body>
 </html>
