@@ -107,33 +107,36 @@
     <!-- 下面左右區域 -->
     <div class="container">
         <div class="contact-box">
-               <div class="contact-left">  <!-- 左邊表格 -->
-                    <h3>歡迎寄信給我們</h3>
-                    <div class="input-row">
-                        <div class="input-group"> 
-                            <label>姓名</label>
-                            <input type="text" >
-                        </div>
-                       
-                        <div class="input-group"> 
-                            <label>電話</label>
-                            <input type="text">
-                        </div>
-    
-                        <div class="input-group"> 
-                            <label>信箱</label>
-                            <input type="text">
-                        </div>
-    
-                        <div class="input-group"> 
-                            <label>內容</label>
-                            <textarea rows="10"></textarea>
-                        </div>
-    
-                        <button type="submit">送出</button>
-    
+            <form id="contact-form" class="contact-left">  <!-- 左邊表格 -->
+                <h3>歡迎寄信給我們</h3>
+                <div class="input-row">
+                    <div class="input-group"> 
+                        <label>姓名</label>
+                        <input type="text" name="user_name" required>
                     </div>
+            
+                    <div class="input-group"> 
+                        <label>電話</label>
+                        <input type="text" name="user_phone" required>
+                    </div>
+            
+                    <div class="input-group"> 
+                        <label>信箱</label>
+                        <input type="email" name="user_email" required>
+                    </div>
+            
+                    <div class="input-group"> 
+                        <label>內容</label>
+                        <textarea rows="10" name="message" required></textarea>
+                    </div>
+            
+                    <button type="submit">送出</button>
+            
+                    <!-- 顯示訊息的地方 -->
+                    <div id="contact-message" style="margin-top: 10px; color: green;"></div>
                 </div>
+            </form>
+            
     
                 <div class="contact-right"><!-- 右邊表格 -->
                     <div class="transportation">
@@ -199,6 +202,7 @@
                     <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: #ffa629;"></i>
                     </a></li>
                 </ul>
+
                 
             
             <div class="footer-bottom">
@@ -210,6 +214,8 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="./js/contact_us.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
 
     
 </body>
